@@ -1,0 +1,9 @@
+{
+  "name": "js-utils-for-sites-cookie-module",
+  "version": "1.0.0",
+  "description": "A simple module for setting and getting cookies.",
+  "main": "src/index.js",
+  "keywords": ["cookies", "setCookie", "getCookie", "JavaScript"],
+  "author": "Ваше имя",
+  "license": "MIT"
+}
