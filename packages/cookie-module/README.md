@@ -42,7 +42,7 @@ setCookie('username', 'JohnDoe', 7); // Устанавливает cookie 'usern
 
 - **name** (string) - Имя cookie, значение которого вы хотите получить.
 
-- **Возвращает** (string|null) - Значение cookie или `null`, если cookie не найдено.
+- **return** (string|null) - Значение cookie или `null`, если cookie не найдено.
 
 **Пример:**
 
