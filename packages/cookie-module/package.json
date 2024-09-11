@@ -3,7 +3,23 @@
   "version": "1.0.0",
   "description": "A simple module for setting and getting cookies.",
   "main": "src/index.js",
-  "keywords": ["cookies", "setCookie", "getCookie", "JavaScript"],
-  "author": "Ваше имя",
-  "license": "MIT"
+  "keywords": [
+    "cookies",
+    "setCookie",
+    "getCookie",
+    "JavaScript"
+  ],
+  "author": "IktaNikuba",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukov-io/js-utils-for-sites.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lukov-io/js-utils-for-sites/issues"
+  },
+  "homepage": "https://github.com/lukov-io/js-utils-for-sites#readme"
 }
