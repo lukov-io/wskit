@@ -14,15 +14,15 @@ npm install js-utils-for-sites-cookie-module
 
 ### Импорт
 
-Вы можете импортировать функции `setCookie` и `getCookie` следующим образом:
+Вы можете импортировать объект cookieUtils следующим образом:
 
 ```javascript
-import { setCookie, getCookie } from 'js-utils-for-sites-cookie-module';
+import { cookieUtils } from 'js-utils-for-sites-cookie-module';
 ```
 
 ### API
 
-#### `setCookie(name, value, days)`
+#### `cookieUtils.setCookie(name, value, days)`
 
 Устанавливает cookie с заданным именем, значением и временем жизни.
 
@@ -33,10 +33,10 @@ import { setCookie, getCookie } from 'js-utils-for-sites-cookie-module';
 **Пример:**
 
 ```javascript
-setCookie('username', 'JohnDoe', 7); // Устанавливает cookie 'username' со значением 'JohnDoe' на 7 дней
+cookieUtils.setCookie('username', 'JohnDoe', 7); // Устанавливает cookie 'username' со значением 'JohnDoe' на 7 дней
 ```
 
-#### `getCookie(name)`
+#### `cookieUtils.getCookie(name)`
 
 Получает значение cookie по его имени.
 
@@ -47,8 +47,9 @@ setCookie('username', 'JohnDoe', 7); // Устанавливает cookie 'usern
 **Пример:**
 
 ```javascript
-const username = getCookie('username'); // Получает значение cookie 'username'
+const username = cookieUtils.getCookie('username'); // Получает значение cookie 'username'
 console.log(username); // Выводит: 'JohnDoe'
+
 ```
 
 ## Примеры
@@ -56,12 +57,12 @@ console.log(username); // Выводит: 'JohnDoe'
 Вот пример использования модуля для работы с куки:
 
 ```javascript
-import { setCookie, getCookie } from 'js-utils-for-sites-cookie-module';
+import { cookieUtils } from 'js-utils-for-sites-cookie-module';
 
 // Установка cookie на 7 дней
-setCookie('userPreference', 'darkMode', 7);
+cookieUtils.setCookie('userPreference', 'darkMode', 7);
 
 // Получение значения cookie
-const preference = getCookie('userPreference');
+const preference = cookieUtils.getCookie('userPreference');
 console.log(preference); // Выводит: 'darkMode'
 ```

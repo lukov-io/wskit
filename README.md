@@ -31,16 +31,20 @@ npm install js-utils-for-sites-cookie-module
 
 Модуль `js-utils-for-sites-cookie-module` предоставляет простые функции для работы с куки браузера.
 
-- **`setCookie(name, value, days)`** — Устанавливает cookie с заданным именем, значением и временем жизни.
-- **`getCookie(name)`** — Получает значение cookie по его имени.
+- **`cookieUtils.setCookie(name, value, days)`** — Устанавливает cookie с заданным именем, значением и временем жизни.
+- **`cookieUtils.getCookie(name)`** — Получает значение cookie по его имени.
 
 Пример использования:
 
 ```javascript
-import { setCookie, getCookie } from 'js-utils-for-sites-cookie-module';
+import { cookieUtils } from 'js-utils-for-sites-cookie-module';
 
-setCookie('username', 'JohnDoe', 7); // Установить куки на 7 дней
-const username = getCookie('username'); // Получить значение куки
+// Установка cookie на 7 дней
+cookieUtils.setCookie('userPreference', 'darkMode', 7);
+
+// Получение значения cookie
+const preference = cookieUtils.getCookie('userPreference');
+console.log(preference); // Выводит: 'darkMode'
 ```
 
 
