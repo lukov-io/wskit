@@ -40,7 +40,7 @@ cookieUtils.setCookie('username', 'JohnDoe', 7); // Устанавливает c
 
 Получает значение cookie по его имени.
 
-- **name** (string) - Имя cookie, значение которого вы хотите получить.
+- **param** (string) - Имя cookie, значение которого вы хотите получить.
 
 - **return** (string|null) - Значение cookie или `null`, если cookie не найдено.
 
