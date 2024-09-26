@@ -1,0 +1,27 @@
+{
+  "name": "js-utils-for-sites",
+  "version": "1.0.2",
+  "description": "A collection of JavaScript utilities for common tasks in web development, including cookie management, ICS, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "utilities",
+    "cookie",
+    "web-development",
+    "modules"
+  ],
+  "author": "lukov.io",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/js-utils-for-sites.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/js-utils-for-sites/issues"
+  },
+  "homepage": "https://github.com/your-username/js-utils-for-sites#readme",
+  "private": false
+}
