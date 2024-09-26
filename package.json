@@ -1,6 +1,6 @@
 {
   "name": "js-utils-for-sites",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of JavaScript utilities for common tasks in web development, including cookie management, ICS, and more.",
   "main": "index.js",
   "scripts": {
