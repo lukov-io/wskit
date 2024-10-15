@@ -52,7 +52,7 @@ export default (function () {
    */
   const handleItemClick = (event, accordion) => {
     const item = event.currentTarget;
-    const itemActiveClass = accordion.dataset.accordionActiveClass || 'active';
+    const itemActiveClass = accordion.dataset.itemActiveClass || 'active';
     const mode = accordion.dataset.accordion || 'single';
 
     if (mode === 'single' && !item.classList.contains(itemActiveClass)) {

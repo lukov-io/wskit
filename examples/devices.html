@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Device Type Detection Example</title>
+	<style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          min-width: 320px;
+      }
+
+      .container {
+          max-width: 100%;
+          padding: max(20px, 3vw);
+          text-align: center;
+      }
+
+      h1 {
+          font-size: max(22px, 3vw);
+          width: 100%;
+          margin: 0;
+          white-space: wrap;
+      }
+
+      button {
+          padding: 10px 20px;
+          margin: 10px;
+          cursor: pointer;
+          width: max(250px, 10vw);
+      }
+
+      #result {
+          margin-top: 20px;
+          font-weight: bold;
+          max-width: 100%;
+          text-align: center;
+      }
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Device Type Detection Example</h1>
+	<button id="check-device">Check Device Type</button>
+	<div id="result"></div>
+</div>
+</body>
+
+<script type="module">
+  import devices from '/js/devices.js';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const checkDeviceButtons = document.querySelector('#check-device');
+    const resultDiv = document.getElementById('result');
+
+    checkDeviceButtons.addEventListener('click', () => {
+			let message = 'You are using: ';
+			if (devices.smallMobileLandscape()) {
+				message += 'a small mobile device in landscape mode.';
+			} else if (devices.smallMobilePortrait()) {
+				message += 'a small mobile device in portrait mode.';
+			} else if (devices.mobileLandscape()) {
+				message += 'a mobile device in landscape mode.';
+			} else if (devices.mobilePortrait()) {
+				message += 'a mobile device in portrait mode.';
+			} else if (devices.tabletLandscape()) {
+				message += 'a tablet in landscape mode.';
+			} else if (devices.tabletPortrait()) {
+				message += 'a tablet in portrait mode.';
+			} else if (devices.desktop()) {
+				message += 'a desktop computer.';
+			} else {
+				message += 'an unknown device.';
+			}
+			resultDiv.textContent = message;
+		});
+  });
+</script>
+
+</html>

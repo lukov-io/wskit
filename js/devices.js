@@ -4,17 +4,17 @@
  * @return {Boolean}
  *
  * @example
- * if (isMobile.mobile()) {
+ * if (devices.mobile()) {
  *  doSomethingOnMobileOnly();
  * }
  */
 
 export default (function() {
-  let smallMobileLandscape = "(max-width: 320px) and (orientation: landscape)";
+  let smallMobileLandscape = "(max-height: 320px) and (orientation: landscape)";
   let smallMobilePortrait = "(max-width: 320px) and (orientation: portrait)";
   let smallMobile = "(max-width: 320px)";
 
-  let mobileLandscape = "(max-width: 767px) and (orientation: landscape)";
+  let mobileLandscape = "(max-height: 767px) and (orientation: landscape)";
   let mobilePortrait = "(max-width: 767px) and (orientation: portrait)";
   let mobile = "(max-width: 767px)";
 

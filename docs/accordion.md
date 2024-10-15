@@ -64,7 +64,7 @@ Initializes the accordion functionality by finding all accordions in the documen
 **Example:**
 
 ```javascript
-accordions.run();
+accordion.run();
 ```
 
 ### Other functions

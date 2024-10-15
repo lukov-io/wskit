@@ -51,12 +51,8 @@ export default (function () {
         : toggler.dataset.moreText || 'Read More';
   };
 
-  const run = () => {
-    init();
-  }
-
   return {
-    run: run,
+    run: init,
   };
 })();
 

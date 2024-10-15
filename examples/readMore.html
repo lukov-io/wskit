@@ -10,6 +10,7 @@
 
 		body {
 			font-family: Arial, sans-serif;
+			height: 100vh;
 			background-color: #f5f5f5;
 			margin: 0;
 			padding: 20px;
@@ -20,21 +21,19 @@
 			color: #333;
 		}
 
+		p {
+				margin-top: 0;
+				margin-bottom: 20px;
+		}
+
 		.read-more {
 			max-width: 600px;
+			height: fit-content;
 			margin: 20px auto;
 			padding: 20px;
 			background-color: #ffffff;
 			border-radius: 5px;
 			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-			.read-more__content {
-				display: none;
-			}
-
-			&.active .read-more__content {
-				display: block;
-			}
 
 			.read-more__button {
 				background-color: #007bff;
@@ -48,12 +47,55 @@
 					background-color: #0056b3;
         }
 			}
+
+			&:not([data-read-more-active-class]) {
+				.read-more__content {
+					display: none;
+				}
+
+				&.active {
+					.read-more__content {
+						display: block;
+					}
+				}
+			}
+
+			&[data-read-more-active-class] {
+				.read-more__content {
+					max-height: 0;
+					opacity: 0;
+					display: block;
+					overflow: hidden;
+					transition: max-height 1s ease, opacity 1s ease;
+				}
+
+				&.custom-class {
+					.read-more__content {
+						max-height: 500px;
+						opacity: 1;
+					}
+				}
+			}
 		}
 	</style>
 </head>
 <body>
 <h1>Read More Functionality Example</h1>
-<div class="read-more" data-read-more data-read-more-active-class="active">
+<div class="read-more" data-read-more>
+	<p>This is the introductory text that is always visible to users. If you want to know more, just click the button below!</p>
+	<div class="read-more__content">
+		<p>
+			This is hidden content that will be displayed after clicking the button. You can place additional information, text, images, and even videos here!
+		</p>
+		<p>
+			Here’s another paragraph to demonstrate how you can expand the content. For example, you could add any interesting facts or statistics to make your article more informative.
+		</p>
+	</div>
+	<span class="read-more__button" data-read-more-toggler data-more-text="Read More" data-less-text="Hide">Read More</span>
+</div>
+
+<h1>Read More Functionality Example</h1>
+<div class="read-more" data-read-more data-read-more-active-class="custom-class">
 	<p>This is the introductory text that is always visible to users. If you want to know more, just click the button below!</p>
 	<div class="read-more__content">
 		<p>

@@ -1,4 +1,4 @@
-# isMobile
+# devices
 
 ## Description
 
@@ -17,15 +17,15 @@ npm install js-utils
 Import the module into your project:
 
 ```javascript
-import { isMobile } from 'js-utils';
+import { devices } from 'js-utils';
 ```
 
 ### Example Usage
 
 ```javascript
-if (isMobile.mobile()) {
+if (devices.mobile()) {
 doSomethingOnMobileOnly();
-} else if (isMobile.tablet()) {
+} else if (devices.tablet()) {
 doSomethingOnTabletOnly();
 } else {
 doSomethingOnDesktop();
