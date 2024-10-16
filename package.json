@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start-server": "http-server -p 8080",
-    "cypress": "cypress open",
-    "test": "npm run start-server & cypress run && kill $!",
+    "cypress": "cypress open --browser chrome",
+    "test": "npm run start-server & cypress run --browser chrome && kill $!",
     "dev": "npm run start-server & npm run cypress"
   },
   "keywords": [
@@ -18,11 +18,10 @@
     "web-development",
     "modules"
   ],
-  "author": "IktaNikuba",
-  "license": "ISC",
+  "author": "lukov.io/IktaNikuba",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukov-io/js-utils.git"
+    "url": "https://github.com/lukov-io/js-utils"
   },
   "bugs": {
     "url": "https://github.com/lukov-io/js-utils/issues"
