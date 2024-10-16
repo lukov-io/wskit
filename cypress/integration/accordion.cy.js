@@ -20,13 +20,13 @@ describe('Accordion', () => {
 
   it('should close other items in single mode', () => {
     singleAccordion().find('[data-accordion-item]')
-        .each(($item, index) => {
-      cy.wrap($item).click();
+        .each((item, index) => {
+      cy.wrap(item).click();
 
       singleAccordion().find('[data-accordion-item]')
-          .each(($otherItem, otherIndex) => {
+          .each((otherItem, otherIndex) => {
         if (otherIndex !== index) {
-          cy.wrap($otherItem).should('not.have.class', 'active');
+          cy.wrap(otherItem).should('not.have.class', 'active');
         }
       });
     });
@@ -46,13 +46,13 @@ describe('Accordion', () => {
 
   it('should activate all items in multiple mode', () => {
     multipleAccordion().find('[data-accordion-item]')
-        .each(($item) => {
-      cy.wrap($item).click();
+        .each((item) => {
+      cy.wrap(item).click();
     });
 
     multipleAccordion().find('[data-accordion-item]')
-        .each(($otherItem) => {
-      cy.wrap($otherItem).should('have.class', 'custom-class');
+        .each((otherItem) => {
+      cy.wrap(otherItem).should('have.class', 'custom-class');
     });
   });
 });

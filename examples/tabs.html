@@ -47,10 +47,16 @@
 				}
 			}
 
-			&[data-tabs="openAuto"] {
+			&:not([data-tabs="openByClass"]) {
 				.tabs__item-content {
 					padding: 20px;
         }
+
+				.tabs__button {
+					&.active {
+						background-color: #0056b3;
+					}
+				}
       }
 
 			&[data-tabs="openByClass"] {
@@ -61,11 +67,18 @@
 					transition: opacity 1s ease,transform 1s ease;
 					transform: translateY(0);
 
-					&.active {
+					&.custom-content-class {
 						margin: 20px;
 						max-height: fit-content;
 						opacity: 1;
 						transform: translateY(-10px);
+					}
+				}
+
+				.tabs__button {
+					&.custom-button-class {
+						background-color: #0056b3;
+						transition: background-color 1s ease-out;
 					}
 				}
 			}
@@ -74,7 +87,7 @@
 </head>
 <body>
 <h2>Tabs Example with Open/Close by Class</h2>
-<div class="tabs" data-tabs="openByClass" data-active-button-class="active" data-active-content-class="active">
+<div class="tabs" data-tabs="openByClass" data-active-button-class="custom-button-class" data-active-content-class="custom-content-class">
 	<div class="tabs__header">
 		<span class="tabs__button" data-tab-button="tab1">Tab 1</span>
 		<span class="tabs__button" data-tab-button="tab2">Tab 2</span>
@@ -95,7 +108,7 @@
 </div>
 
 <h2>Tabs Example with Automatic Open/Close</h2>
-<div class="tabs" data-tabs="openAuto" data-active-button-class="active">
+<div class="tabs" data-tabs>
 	<div class="tabs__header">
 		<span class="tabs__button" data-tab-button="tab1">Tab 1</span>
 		<span class="tabs__button" data-tab-button="tab2">Tab 2</span>
