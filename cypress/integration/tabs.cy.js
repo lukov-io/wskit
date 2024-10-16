@@ -1,6 +1,6 @@
 describe('Tabs', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8080/examples/tabs.html');
+    cy.visit('/examples/tabs.html');
   });
 
   const customClassTabs = () => cy.get('[data-tabs="openByClass"]');

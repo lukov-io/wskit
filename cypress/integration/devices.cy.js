@@ -1,6 +1,6 @@
 describe('Device Type Detection Example', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8080/examples/devices.html');
+    cy.visit('/examples/devices.html');
   });
 
   describe('Small Mobile Devices', () => {

@@ -1,6 +1,6 @@
 describe('Accordion', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8080/examples/accordion.html');
+    cy.visit('/examples/accordion.html');
   });
 
   const singleAccordion = () => cy.get('[data-accordion="single"]');

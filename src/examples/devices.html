@@ -51,10 +51,11 @@
 </body>
 
 <script type="module">
-  import devices from '/js/devices.js';
+
+  import { devices } from '../js/index.js';
 
   document.addEventListener('DOMContentLoaded', () => {
-    const checkDeviceButtons = document.querySelector('#check-device');
+    const checkDeviceButtons = document.getElementById('check-device');
     const resultDiv = document.getElementById('result');
 
     checkDeviceButtons.addEventListener('click', () => {

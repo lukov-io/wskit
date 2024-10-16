@@ -33,7 +33,7 @@ cookie.remove('key');
 ```
 
 - [cookie Documentation](docs/cookie.md)
-- [cookie Example](examples/cookie.html)
+- [cookie Example](src/examples/cookie.html)
 
 ### tabs
 
@@ -72,7 +72,7 @@ tabs.run();
 ```
 
 - [tabs Documentation](docs/tabs.md)
-- [tabs Example](examples/tabs.html)
+- [tabs Example](src/examples/tabs.html)
 
 ### accordion
 
@@ -98,7 +98,7 @@ accordion.run();
 ```
 
 - [accordion Documentation](docs/accordion.md)
-- [accordion Example](examples/accordion.html)
+- [accordion Example](src/examples/accordion.html)
 
 ### readMore
 
@@ -124,7 +124,7 @@ readMore.run();
 ```
 
 - [readMore Documentation](docs/readMore.md)
-- [readMore Example](examples/readMore.html)
+- [readMore Example](src/examples/readMore.html)
 
 ### devices
 
@@ -136,65 +136,49 @@ Usage example:
 import { devices } from 'js-utils';
 
 if (devices.mobile()) {
-doSomethingOnMobileOnly();
+  doSomethingOnMobileOnly();
 }
 ```
 
 - [devices Documentation](docs/devices.md)
-- [devices Example](examples/devices.html)
+- [devices Example](src/examples/devices.html)
 
 ## Testing and Running Examples
 
 For local development and testing of modules, a local HTTP server is provided. This allows you to view examples and run 
 tests.
 
-### Commands
+# npm Commands
 
-- **start-server**: starts a local HTTP server on port 8080.
+- **dev**: Runs the project in development mode using Parcel and opens it in the browser.
+```bash
+npm run dev
+```
 
+- **build**: Builds the project for production using Parcel and places the compiled files in the `dist` folder.
+```bash
+npm run build
+```
+
+- **test**: Starts a local server with Parcel and runs the Cypress tests. The server stops after the tests are completed.
+```bash
+npm run test
+```
+
+
+- **start-server**: Starts a local server with Parcel without caching.
 ```bash
 npm run start-server
 ```
 
-- **cypress**: opens Cypress for manual testing.
-
+- **cypress**: Opens the Cypress interface for manual test execution.
 ```bash
 npm run cypress
 ```
 
-- **test**: runs the HTTP server, executes all tests via Cypress in command-line mode, and then terminates the server 
-- process.
-
+- **dev-tests**: Starts a local server with Parcel and opens the Cypress interface for manual testing.
 ```bash
-npm run test
-```
-
-- **dev**: runs the HTTP server and opens Cypress for testing in developer mode (manual testing).
-
-```bash
-npm run dev
-```
-
-### Running Tests
-
-1. Install the dependencies:
-
-```bash
-npm install
-```
-
-2. Start the local server and run tests:
-
-- For automatic testing with server launch:
-
-```bash
-npm run test
-```
-
-- For launching the server and working with Cypress manually:
-
-```bash
-npm run dev
+npm run dev-tests
 ```
 
 Tests cover the main functionalities of each module and check operation in different modes.
