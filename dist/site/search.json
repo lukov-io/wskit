@@ -4,45 +4,15 @@
     
     
     {
-      "title": "Welcome",
-      "url": "/jekyll-doc-theme/docs/home/"
+      "title": "Accordion",
+      "url": "/jekyll-doc-theme/docs/accordion/"
     },
   
     
     
     {
-      "title": "Themes",
-      "url": "/jekyll-doc-theme/docs/themes/"
-    },
-  
-    
-    
-    {
-      "title": "Customization",
-      "url": "/jekyll-doc-theme/docs/customization/"
-    },
-  
-
-  
-    
-    
-    {
-      "title": "Markdown Cheatsheet",
-      "url": "/jekyll-doc-theme/docs/cheatsheet/"
-    },
-  
-    
-    
-    {
-      "title": "Font Awesome Icon List",
-      "url": "/jekyll-doc-theme/docs/font-awesome/"
-    },
-  
-    
-    
-    {
-      "title": "Bootstrap Features",
-      "url": "/jekyll-doc-theme/docs/bootstrap/"
+      "title": "Example",
+      "url": "/jekyll-doc-theme/docs/accordion/example/"
     },
   
 

@@ -2,24 +2,54 @@ import { terser } from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
-import del from 'rollup-plugin-delete';
 
-export default {
-  input: 'src/exportModules.js',
-  output: {
-    file: 'dist/js/bundler.js',
-    format: 'esm',
-    sourcemap: false,
+export default [
+  {
+    input: 'src/index.js',
+    output: {
+      file: 'dist/bundle.js',
+      format: 'esm',
+      sourcemap: true,
+    }
   },
-
-  plugins: [
-    del({ targets: 'dist/js/*' }),
-    resolve(),
-    commonjs(),
-    babel({
-      exclude: 'node_modules/**', // Исключаем node_modules
-      babelHelpers: 'bundled',
-    }),
-    terser(),
-  ],
-};
+  {
+    input: 'src/utils/accordion.js',
+    output: {
+      file: 'dist/utils/accordion.js',
+      format: 'es',
+      sourcemap: false,
+    }
+  },
+  {
+    input: 'src/utils/cookie.js',
+    output: {
+      file: 'dist/utils/cookie.js',
+      format: 'es',
+      sourcemap: false,
+    }
+  },
+  {
+    input: 'src/utils/devices.js',
+    output: {
+      file: 'dist/utils/devices.js',
+      format: 'es',
+      sourcemap: false,
+    }
+  },
+  {
+    input: 'src/utils/readMore.js',
+    output: {
+      file: 'dist/utils/readMore.js',
+      format: 'es',
+      sourcemap: false,
+    }
+  },
+  {
+    input: 'src/utils/tabs.js',
+    output: {
+      file: 'dist/utils/tabs.js',
+      format: 'es',
+      sourcemap: false,
+    }
+  }
+];

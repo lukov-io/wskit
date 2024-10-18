@@ -97,7 +97,7 @@ accordion.run();
 </div>
 ```
 
-- [accordion Documentation](src/docs/accordion.md)
+- [accordion Documentation](site/_docs/accordion.md)
 - [accordion Example](src/examples/accordion.html)
 
 ### readMore
@@ -223,7 +223,6 @@ js-utils/
 │   └── tabs.js
 │
 ├── cypress.config.js
-├── exportModule.js
 ├── package.json
 ├── README.md
 └── .gitignore

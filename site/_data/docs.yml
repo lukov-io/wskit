@@ -1,11 +1,4 @@
-- title: Getting Started
+- title: Accordion
   docs:
-  - home
-  - themes
-  - customization
-
-- title: Examples
-  docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+    - accordion
+    - accordion/example

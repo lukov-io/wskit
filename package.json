@@ -2,7 +2,7 @@
   "name": "js-utils",
   "version": "1.0.5",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
-  "main": "dist/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "dev": "rollup -c -w --environment NODE_ENV:development",
     "build": "rollup -c --environment NODE_ENV:production",
@@ -12,19 +12,12 @@
     "tests": "npm run start-server & cypress run --browser chrome && kill $!",
     "dev-tests": "npm run start-server & npm run cypress",
 
-    "deploy": "gh-pages -d dist/site -m 'Deploy new version' -b gh-pages",
-
-    "jekyll build incremental": "jekyll build --source site --destination dist/site --config site/_config.yml --incremental",
-    "jekyll serve": "jekyll serve --port 8080 --source site --destination dist/site --config site/_config.yml --incremental",
-    "jekyll build": "jekyll build --source site --destination dist/site --config site/_config.yml"
+    "jekyll-build-incremental": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml --incremental",
+    "jekyll-serve": "npm run copy-build-to-site && jekyll serve --port 8080 --source site --destination dist/site --config site/_config.yml --incremental",
+    "jekyll-build": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml",
+    "copy-build-to-site": "cp dist/utils/* site/assets/js && cp dist/bundle.js site/assets/js"
   },
-  "jekyll": {
-    "gems": [
-      "jekyll",
-      "другие_гемы_если_нужно"
-    ],
-    "build_dir": ".build"
-  },
+  "type": "module",
   "keywords": [
     "javascript",
     "utilities",
