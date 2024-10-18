@@ -1,4 +1,4 @@
-# js-utils
+# JS Utils
 
 ## Description
 
@@ -14,171 +14,74 @@ You can install the entire package via npm:
 npm install js-utils
 ```
 
-Or include modules individually, depending on your needs.
-
 ## List of Modules
 
 ### cookie
 
 A module for working with cookies: setting and retrieving values.
-
-Usage example:
-
-```javascript
-import { cookie } from 'js-utils';
-
-cookie.set('key', 'value', 7);
-const value = cookie.get('key');
-cookie.remove('key');
-```
-
-- [cookie Documentation](src/docs/cookie.md)
-- [cookie Example](src/examples/cookie.html)
+- [cookie Documentation](js/docs/cookie.md)
+- [cookie Example](js/examples/cookie.html)
 
 ### tabs
 
 A module for implementing tabs with various behavior modes.
-
-Usage example:
-
-```javascript
-import { tabs } from 'js-utils';
-
-tabs.run();
-```
-```html
-<div class="tabs" 
-     data-tabs="openByClass" 
-     data-active-button-class="active-button" 
-     data-active-content-class="active-content">
-  <div class="tabs__header">
-    <span data-tab-button="tab1">Tab 1</span>
-    <span data-tab-button="tab2">Tab 2</span>
-    <span data-tab-button="tab3">Tab 3</span>
-  </div>
-  <div data-tab-content="tab1">
-    <h2>Content for Tab 1</h2>
-    <p>This is the content for Tab 1.</p>
-  </div>
-  <div data-tab-content="tab2">
-    <h2>Content for Tab 2</h2>
-    <p>This is the content for Tab 2.</p>
-  </div>
-  <div data-tab-content="tab3">
-    <h2>Content for Tab 3</h2>
-    <p>This is the content for Tab 3.</p>
-  </div>
-</div>
-```
-
-- [tabs Documentation](src/docs/tabs.md)
-- [tabs Example](src/examples/tabs.html)
+- [tabs Documentation](js/docs/tabs.md)
+- [tabs Example](js/examples/tabs.html)
 
 ### accordion
 
 A module for creating accordions with the ability to display one or multiple open items.
-
-Usage example:
-
-```javascript
-import { accordion } from 'js-utils';
-
-accordion.run();
-```
-
-```html
-<div class="accordion" 
-     data-accordion="single" 
-     data-accordion-active-class='custom-class'>
-  <div class="accordion__item" data-accordion-item>
-    <h2 class="accordion__item-title">Title</h2>
-    <div class="accordion__item-content">Content</div>
-  </div>
-</div>
-```
-
-- [accordion Documentation](site/_docs/accordion.md)
-- [accordion Example](src/examples/accordion.html)
+- [Documentation](https://lukov-io.github.io/js-utils/docs/accordion/)
+- [Examples](https://lukov-io.github.io/js-utils/docs/accordion/example/)
 
 ### readMore
 
 A module for hiding and showing long texts with a "Read More" button.
-
-Usage example:
-
-```javascript
-import { readMore } from 'js-utils';
-
-readMore.run();
-```
-
-```html
-<div class="read-more-block" 
-     data-read-more 
-     data-read-more-active-class="active">
-  <div>Content to show/hide</div>
-  <button data-read-more-toggler 
-          data-more-text="Read More" 
-          data-less-text="Read Less">Read More</button>
-</div>
-```
-
-- [readMore Documentation](src/docs/readMore.md)
-- [readMore Example](src/examples/readMore.html)
+- [readMore Documentation](js/docs/readMore.md)
+- [readMore Example](js/examples/readMore.html)
 
 ### devices
 
 A module for detecting the type of device (mobile or desktop).
-
-Usage example:
-
-```javascript
-import { devices } from 'js-utils';
-
-if (devices.mobile()) {
-  doSomethingOnMobileOnly();
-}
-```
-
-- [devices Documentation](src/docs/devices.md)
-- [devices Example](src/examples/devices.html)
+- [devices Documentation](js/docs/devices.md)
+- [devices Example](js/examples/devices.html)
 
 ## Testing and Running Examples
 
 For local development and testing of modules, a local HTTP server is provided. This allows you to view examples and run 
 tests.
 
-# npm Commands
+### Commands
 
 - **dev**: Runs the project in development mode using Parcel and opens it in the browser.
 ```bash
-npm run dev
+$ npm run dev
 ```
 
 - **build**: Builds the project for production using Parcel and places the compiled files in the `dist` folder.
 ```bash
-npm run build
+$ npm run build
 ```
 
 - **test**: Starts a local server with Parcel and runs the Cypress tests. The server stops after the tests are completed.
 ```bash
-npm run test
+$ npm run test
 ```
 
 
 - **start-server**: Starts a local server with Parcel without caching.
 ```bash
-npm run start-server
+$ npm run start-server
 ```
 
 - **cypress**: Opens the Cypress interface for manual test execution.
 ```bash
-npm run cypress
+$ npm run cypress
 ```
 
 - **dev-tests**: Starts a local server with Parcel and opens the Cypress interface for manual testing.
 ```bash
-npm run dev-tests
+$ npm run dev-tests
 ```
 
 Tests cover the main functionalities of each module and check operation in different modes.

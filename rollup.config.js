@@ -5,49 +5,49 @@ import babel from '@rollup/plugin-babel';
 
 export default [
   {
-    input: 'src/index.js',
+    input: 'js/index.js',
     output: {
-      file: 'dist/bundle.js',
+      file: 'dist/js/bundle.js',
       format: 'esm',
       sourcemap: true,
     }
   },
   {
-    input: 'src/utils/accordion.js',
+    input: 'js/components/accordion.js',
     output: {
-      file: 'dist/utils/accordion.js',
+      file: 'dist/js/components/accordion.js',
       format: 'es',
       sourcemap: false,
     }
   },
   {
-    input: 'src/utils/cookie.js',
+    input: 'js/components/cookie.js',
     output: {
-      file: 'dist/utils/cookie.js',
+      file: 'dist/js/components/cookie.js',
       format: 'es',
       sourcemap: false,
     }
   },
   {
-    input: 'src/utils/devices.js',
+    input: 'js/components/devices.js',
     output: {
-      file: 'dist/utils/devices.js',
+      file: 'dist/js/components/devices.js',
       format: 'es',
       sourcemap: false,
     }
   },
   {
-    input: 'src/utils/readMore.js',
+    input: 'js/components/readMore.js',
     output: {
-      file: 'dist/utils/readMore.js',
+      file: 'dist/js/components/readMore.js',
       format: 'es',
       sourcemap: false,
     }
   },
   {
-    input: 'src/utils/tabs.js',
+    input: 'js/components/tabs.js',
     output: {
-      file: 'dist/utils/tabs.js',
+      file: 'dist/js/components/tabs.js',
       format: 'es',
       sourcemap: false,
     }

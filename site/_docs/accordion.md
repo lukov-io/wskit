@@ -6,16 +6,16 @@ permalink: /docs/accordion/
 Accordion module. This module provides the ability to initialize accordions, allowing elements to expand and collapse 
 based on user interaction. 
 
-## Usage 
+### Usage 
 Import the module into your JS:
-### JavaScript
+#### JavaScript
 ```javascript
 import { accordion } from 'js-utils';
 
 accordion.run();
 ```
 
-### HTML
+#### HTML
 ```html
 <div class="accordion" data-accordion="single" data-accordion-active-class='active'>
   <div class="accordion__item" data-accordion-item>
@@ -29,7 +29,7 @@ accordion.run();
 </div>
 ```
 
-## Data attributes
+### Data attributes
 
 - **data-accordion**
   - Indicates the accordion mode. The value `"single"` allows only one item to be open at any time,
@@ -42,9 +42,9 @@ accordion.run();
   - Refers to an element that is part of the accordion. This attribute should be added to all elements 
     that can be opened or closed.
 
-## API
+### API
 
-### `run()`
+#### `run()`
 
 Initializes the accordion functionality by finding all accordions in the document and setting up event handlers.
 
@@ -54,7 +54,7 @@ Initializes the accordion functionality by finding all accordions in the documen
 accordion.run();
 ```
 
-### Other functions
+#### Other functions
 
 - **resetState(accordion, itemActiveClass)**
   - Resets the accordion state by removing the active class from all items.
@@ -62,7 +62,7 @@ accordion.run();
 - **handleItemClick(event, accordion)**
   - Handles the click event on the accordion item.
 
-## Notes
+### Notes
 
 This module supports multiple modes.
 In single mode, when a new item is opened, any previously opened item will automatically close, ensuring that only 
