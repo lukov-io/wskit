@@ -1,0 +1,10 @@
+title: "js-utils"
+description: "Документация и примеры для js-utils."
+baseurl: "/LearnGHP.github.io/"
+url: "https://iktanikuba.github.io/"
+
+remote_theme: aksakalli/jekyll-doc-theme@gh-pages
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-remote-theme
