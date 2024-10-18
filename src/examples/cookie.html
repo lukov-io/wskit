@@ -119,47 +119,5 @@
 	</div>
 </div>
 </body>
-<script type="module">
-  import { cookie } from '../js/index.js';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const setCookieButton = document.getElementById('setCookie');
-    const getCookieButton = document.getElementById('getCookie');
-    const removeCookieButton = document.getElementById('removeCookie');
-    const cookieList = document.getElementById('cookieList');
-    const cookieValueText = document.getElementById('cookieValueText');
-
-    const updateCookieList = () => {
-      cookieList.innerHTML = '';
-      const cookies = document.cookie.split('; ');
-      cookies.forEach(cookie => {
-        const li = document.createElement('li');
-        li.textContent = cookie;
-        cookieList.appendChild(li);
-      });
-    };
-
-    setCookieButton.addEventListener('click', () => {
-      const name = document.getElementById('cookieName').value;
-      const value = document.getElementById('cookieValue').value;
-      const days = document.getElementById('cookieDays').value;
-      cookie.set(name, value, days);
-      updateCookieList();
-    });
-
-    getCookieButton.addEventListener('click', () => {
-      const name = document.getElementById('getCookieByName').value;
-      const value = cookie.get(name);
-      cookieValueText.textContent = value ? `Value: ${value}` : 'Cookie not found';
-    });
-
-    removeCookieButton.addEventListener('click', () => {
-      const name = document.getElementById('removeCookieByName').value;
-      cookie.remove(name);
-      updateCookieList();
-    });
-
-    updateCookieList();
-  });
-</script>
+<script type="module" src="../main.js"></script>
 </html>

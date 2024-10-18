@@ -32,7 +32,7 @@ const value = cookie.get('key');
 cookie.remove('key');
 ```
 
-- [cookie Documentation](docs/cookie.md)
+- [cookie Documentation](src/docs/cookie.md)
 - [cookie Example](src/examples/cookie.html)
 
 ### tabs
@@ -71,7 +71,7 @@ tabs.run();
 </div>
 ```
 
-- [tabs Documentation](docs/tabs.md)
+- [tabs Documentation](src/docs/tabs.md)
 - [tabs Example](src/examples/tabs.html)
 
 ### accordion
@@ -97,7 +97,7 @@ accordion.run();
 </div>
 ```
 
-- [accordion Documentation](docs/accordion.md)
+- [accordion Documentation](site/_docs/accordion.md)
 - [accordion Example](src/examples/accordion.html)
 
 ### readMore
@@ -123,7 +123,7 @@ readMore.run();
 </div>
 ```
 
-- [readMore Documentation](docs/readMore.md)
+- [readMore Documentation](src/docs/readMore.md)
 - [readMore Example](src/examples/readMore.html)
 
 ### devices
@@ -140,7 +140,7 @@ if (devices.mobile()) {
 }
 ```
 
-- [devices Documentation](docs/devices.md)
+- [devices Documentation](src/docs/devices.md)
 - [devices Example](src/examples/devices.html)
 
 ## Testing and Running Examples
@@ -223,7 +223,6 @@ js-utils/
 │   └── tabs.js
 │
 ├── cypress.config.js
-├── index.js
 ├── package.json
 ├── README.md
 └── .gitignore

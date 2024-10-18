@@ -49,37 +49,5 @@
 	<div id="result"></div>
 </div>
 </body>
-
-<script type="module">
-
-  import { devices } from '../js/index.js';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const checkDeviceButtons = document.getElementById('check-device');
-    const resultDiv = document.getElementById('result');
-
-    checkDeviceButtons.addEventListener('click', () => {
-			let message = 'You are using: ';
-			if (devices.smallMobileLandscape()) {
-				message += 'a small mobile device in landscape mode.';
-			} else if (devices.smallMobilePortrait()) {
-				message += 'a small mobile device in portrait mode.';
-			} else if (devices.mobileLandscape()) {
-				message += 'a mobile device in landscape mode.';
-			} else if (devices.mobilePortrait()) {
-				message += 'a mobile device in portrait mode.';
-			} else if (devices.tabletLandscape()) {
-				message += 'a tablet in landscape mode.';
-			} else if (devices.tabletPortrait()) {
-				message += 'a tablet in portrait mode.';
-			} else if (devices.desktop()) {
-				message += 'a desktop computer.';
-			} else {
-				message += 'an unknown device.';
-			}
-			resultDiv.textContent = message;
-		});
-  });
-</script>
-
+<script type="module" src="../main.js"></script>
 </html>
