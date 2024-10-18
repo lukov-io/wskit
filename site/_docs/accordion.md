@@ -1,20 +1,21 @@
 ---
-title: Accordion
+title: Documentation
 permalink: /docs/accordion/
 ---
 
 Accordion module. This module provides the ability to initialize accordions, allowing elements to expand and collapse 
-based on user interaction.
+based on user interaction. 
 
 ## Usage 
-Import the module into your project:
-
+Import the module into your JS:
+### JavaScript
 ```javascript
-import { accordions } from 'js-utils';
+import { accordion } from 'js-utils';
+
+accordion.run();
 ```
 
-### Example usage:
-
+### HTML
 ```html
 <div class="accordion" data-accordion="single" data-accordion-active-class='active'>
   <div class="accordion__item" data-accordion-item>
@@ -26,26 +27,20 @@ import { accordions } from 'js-utils';
     <div class="accordion__item-content">Content 2</div>
   </div>
 </div>
-
-<script>
-  import { accordions } from 'js-utils';
-  accordions.run();
-</script>
 ```
 
 ## Data attributes
 
-- **data-accordion**:
-    - Description: Indicates the accordion mode. The value `"single"` allows only one item to be open at any time, 
-      while the value `"multiple"` allows multiple items to be open simultaneously.
+- **data-accordion**
+  - Indicates the accordion mode. The value `"single"` allows only one item to be open at any time,
+    while the value `"multiple"` allows multiple items to be open simultaneously.
 
-- **data-accordion-active-class**:
-    - Description: Specifies the class that will be added to the active accordion item. By default, the class 
-      `"active"` is used.
+- **data-accordion-active-class**
+  - Specifies the class that will be added to the active accordion item. By default, the class `"active"` is used.
 
-- **data-accordion-item**:
-    - Description: Refers to an element that is part of the accordion. This attribute should be added to all elements 
-      that can be opened or closed.
+- **data-accordion-item**
+  - Refers to an element that is part of the accordion. This attribute should be added to all elements 
+    that can be opened or closed.
 
 ## API
 
@@ -61,11 +56,11 @@ accordion.run();
 
 ### Other functions
 
-- **resetState(accordion, itemActiveClass)**  
-  Resets the accordion state by removing the active class from all items.
+- **resetState(accordion, itemActiveClass)**
+  - Resets the accordion state by removing the active class from all items.
 
-- **handleItemClick(event, accordion)**  
-  Handles the click event on the accordion item.
+- **handleItemClick(event, accordion)**
+  - Handles the click event on the accordion item.
 
 ## Notes
 

@@ -1,32 +1,14 @@
 ---
-title: Example
+title: Examples
 permalink: /docs/accordion/example/
 ---
+
+Examples of the accordion module 
 <script type="module">
   import accordion from "/js-utils/assets/js/accordion.js";
   accordion.run();
 </script>
 <style>
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    height: 100vh;
-    width: 100vw;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .accordions {
-    flex-direction: column;
-    display: flex;
-    row-gap: 20px;
-    padding: 0 50px;
-  }
-
   .accordion {
     background-color: #f0f0f0;
 
@@ -68,7 +50,7 @@ permalink: /docs/accordion/example/
 
       }
 
-      .custom-class	{
+      .active-red	{
         background-color: #CD5C5C;
 
         > .accordion__item-content {
@@ -86,46 +68,96 @@ permalink: /docs/accordion/example/
   }
 </style>
 
-## Example of an accordion with 'single' mode
+## Single mode as default
+
+### Code
+```html
+<div class="accordion" data-accordion>
+  <div class="accordion__item" data-accordion-item>
+    <span class="accordion__item-title">Item 1</span>
+    <div class="accordion__item-content">
+      Content of item 1.
+    </div>
+  </div>
+  <div class="accordion__item" data-accordion-item>
+    <span class="accordion__item-title">Item 2</span>
+    <div class="accordion__item-content" data-accordion-content>
+      Content of item 2.
+    </div>
+  </div>
+  <div class="accordion__item" data-accordion-item>
+    <span class="accordion__item-title">Item 3</span>
+    <div class="accordion__item-content" data-accordion-content>
+      Content of item 3.
+    </div>
+  </div>
+</div>
+```
+### Result
 <div class="accordion" data-accordion="single">
   <div class="accordion__item" data-accordion-item>
-    <h3 class="accordion__item-title">Item 1</h3>
+    <span class="accordion__item-title">Item 1</span>
     <div class="accordion__item-content">
-      Content of item 1. Here you can place any text or HTML code.
+      Content of item 1.
     </div>
   </div>
   <div class="accordion__item" data-accordion-item>
-    <h3 class="accordion__item-title">Item 2</h3>
+    <span class="accordion__item-title">Item 2</span>
     <div class="accordion__item-content" data-accordion-content>
-      Content of item 2. Any text or HTML code can also be placed here.
+      Content of item 2.
     </div>
   </div>
   <div class="accordion__item" data-accordion-item>
-    <h3 class="accordion__item-title">Item 3</h3>
+    <span class="accordion__item-title">Item 3</span>
     <div class="accordion__item-content" data-accordion-content>
-      Content of item 3. You can add anything here, such as images or links.
+      Content of item 3.
     </div>
   </div>
 </div>
 
-## Example of an accordion with 'multiple' mode
-<div class="accordion" data-accordion="multiple" data-item-active-class="custom-class">
+## Multiple mode
+
+### Code
+```html
+<div class="accordion" data-accordion="multiple" data-item-active-class="active-red">
   <div class="accordion__item" data-accordion-item>
-    <h3 class="accordion__item-title">Item 1</h3>
+    <span class="accordion__item-title">Item 1</span>
     <div class="accordion__item-content" data-accordion-content>
-      Content of item 1. Here you can place any text or HTML code.
+      Content of item 1.
     </div>
   </div>
   <div class="accordion__item" data-accordion-item>
-    <h3 class="accordion__item-title">Item 2</h3>
+    <span class="accordion__item-title">Item 2</span>
     <div class="accordion__item-content" data-accordion-content>
-      Content of item 2. Any text or HTML code can also be placed here.
+      Content of item 2.
     </div>
   </div>
   <div class="accordion__item" data-accordion-item>
-    <h3 class="accordion__item-title">Item 3</h3>
+    <span class="accordion__item-title">Item 3</span>
     <div class="accordion__item-content" data-accordion-content>
-      Content of item 3. You can add anything here, such as images or links.
+      Content of item 3.
+    </div>
+  </div>
+</div>
+```
+### Result
+<div class="accordion" data-accordion="multiple" data-item-active-class="active-red">
+  <div class="accordion__item" data-accordion-item>
+    <span class="accordion__item-title">Item 1</span>
+    <div class="accordion__item-content" data-accordion-content>
+      Content of item 1.
+    </div>
+  </div>
+  <div class="accordion__item" data-accordion-item>
+    <span class="accordion__item-title">Item 2</span>
+    <div class="accordion__item-content" data-accordion-content>
+      Content of item 2.
+    </div>
+  </div>
+  <div class="accordion__item" data-accordion-item>
+    <span class="accordion__item-title">Item 3</span>
+    <div class="accordion__item-content" data-accordion-content>
+      Content of item 3.
     </div>
   </div>
 </div>
