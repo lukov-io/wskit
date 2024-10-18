@@ -2,3 +2,15 @@
   docs:
     - accordion
     - accordion/example
+
+- title: Getting Started Jekyll
+  docs:
+    - home
+    - themes
+    - customization
+
+- title: Examples Jekyll
+  docs:
+    - cheatsheet
+    - font-awesome
+    - bootstrap
