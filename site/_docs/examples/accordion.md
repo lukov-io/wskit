@@ -69,7 +69,7 @@ Examples of the accordion module
 </style>
 
 ### Default
-**Single** mode as default
+Set `data-accordion` (or `data-accordion='single'` used as default mode)
 
 <ul class="nav nav-tabs">
   <li class="active">
