@@ -5,7 +5,7 @@ author: Yuri
 ---
 Welcome to JS Utils!
 
-Check out the [docs][docs] for more info on how to get the most out of JS Utils. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh].
+Check out the [docs][docs] for more info on how to get the most out of JS Utils. File all bugs/feature requests at [JS Utils GitHub repo][jsUtilsRepo].
 
 [docs]:     /js-utils/docs
-[jekyll-gh]:https://github.com/jekyll/jekyll
+[jsUtilsRepo]:https://github.com/lukov-io/js-utils
