@@ -53,23 +53,17 @@ tests.
 
 ### Commands
 
-- **dev**: Runs the project in development mode using Parcel and opens it in the browser.
+- **dev**: Runs the project in development mode using Rollup and watches for changes.
 ```bash
 $ npm run dev
 ```
 
-- **build**: Builds the project for production using Parcel and places the compiled files in the `dist` folder.
+- **build**: Builds the project for production using Rollup and places the compiled files in the `dist` folder.
 ```bash
 $ npm run build
 ```
 
-- **test**: Starts a local server with Parcel and runs the Cypress tests. The server stops after the tests are completed.
-```bash
-$ npm run test
-```
-
-
-- **start-server**: Starts a local server with Parcel without caching.
+- **start-server**: Starts a local server using http-server on port 3001.
 ```bash
 $ npm run start-server
 ```
@@ -79,9 +73,34 @@ $ npm run start-server
 $ npm run cypress
 ```
 
-- **dev-tests**: Starts a local server with Parcel and opens the Cypress interface for manual testing.
+- **tests**: Starts a local server and runs the Cypress tests, stopping the server after the tests complete.
+```bash
+$ npm run tests
+```
+
+- **dev-tests**: Starts a local server and opens the Cypress interface for manual testing.
 ```bash
 $ npm run dev-tests
+```
+
+- **jekyll-build-incremental**: Copies built files to the site and performs an incremental Jekyll build.
+```bash
+$ npm run jekyll-build-incremental
+```
+
+- **jekyll-serve**: Copies built files to the site and starts the Jekyll server on port 8080.
+```bash
+$ npm run jekyll-serve
+```
+
+- **jekyll-build**: Copies built files to the site and performs a Jekyll build.
+```bash
+$ npm run jekyll-build
+```
+
+- **copy-build-to-site**: Builds the project and copies the compiled files to `site/assets/js`.
+```bash
+$ npm run copy-build-to-site
 ```
 
 Tests cover the main functionalities of each module and check operation in different modes.
@@ -125,7 +144,7 @@ js-utils/
 │   ├── readMore.js
 │   └── tabs.js
 │
-├── cypress.config.js
+├── cypress.config.cjs
 ├── package.json
 ├── README.md
 └── .gitignore

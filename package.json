@@ -8,12 +8,12 @@
     "build": "rollup -c --environment NODE_ENV:production",
     "start-server": "npx http-server js -p 3001",
 
-    "cypress": "cypress open --browser chrome",
+    "cypress": "cypress open --browser chrome --config baseUrl=http://localhost:3000/examples",
     "tests": "npm run start-server & cypress run --browser chrome && kill $!",
     "dev-tests": "npm run start-server & npm run cypress",
 
     "jekyll-build-incremental": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml --incremental",
-    "jekyll-serve": "npm run copy-build-to-site && jekyll serve --port 8080 --source site --destination dist/site --config site/_config.yml --incremental",
+    "jekyll-serve": "npm run copy-build-to-site && jekyll serve --port 8080 --source site --destination dist/site --config site/_config.yml --disable-disk-cache -w",
     "jekyll-build": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml",
     "copy-build-to-site": "npm run build && cp -R dist/js/* site/assets/js"
   },
@@ -50,7 +50,7 @@
     "rollup-plugin-url": "^3.0.1"
   },
   "directories": {
-    "doc": "js/_post/docs",
+    "doc": "js/docs",
     "example": "js/examples",
     "test": "cypress/integration"
   },

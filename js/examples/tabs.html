@@ -59,29 +59,30 @@
 				}
       }
 
-			&[data-tabs="openByClass"] {
-				.tabs__item-content {
-					overflow: hidden;
-					max-height: 0;
-					opacity: 0;
-					transition: opacity 1s ease,transform 1s ease;
-					transform: translateY(0);
+      &[data-active-content-class] {
+        .tabs__item-content {
+          overflow: hidden;
+          max-height: 0;
+          opacity: 0;
+          transition: opacity 1s ease,transform 1s ease;
+          transform: translateY(0);
 
-					&.custom-content-class {
-						margin: 20px;
-						max-height: fit-content;
-						opacity: 1;
-						transform: translateY(-10px);
-					}
-				}
+          &.custom-content-class {
+            margin: 20px;
+            max-height: fit-content;
+            opacity: 1;
+            transform: translateY(-10px);
+          }
+        }
 
-				.tabs__button {
-					&.custom-button-class {
-						background-color: #0056b3;
-						transition: background-color 1s ease-out;
-					}
-				}
-			}
+        &[data-active-button-class]
+        .tabs__button {
+          &.custom-button-class {
+            background-color: #0056b3;
+            transition: background-color 1s ease-out;
+          }
+        }
+      }
     }
 	</style>
 </head>
@@ -129,6 +130,10 @@
 </div>
 </body>
 
-<script type="module" src="../main.js"></script>
+<script type="module">
+  import { tabs } from "../index.js";
+
+  window.addEventListener("DOMContentLoaded",() => tabs.run())
+</script>
 
 </html>

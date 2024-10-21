@@ -2,3 +2,24 @@
   docs:
     - accordion
     - accordion/example
+
+- title: Cookie
+  docs:
+    - cookie
+    - cookie/example
+
+- title: Devices
+  docs:
+    - devices
+    - devices/example
+
+- title: ReadMore
+  docs:
+    - readMore
+    - readMore/example
+
+
+- title: Tabs
+  docs:
+    - tabs
+    - tabs/example

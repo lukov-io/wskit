@@ -1,50 +1,180 @@
 ---
-title: Welcome
+title: JS Utils 
 permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-## Getting started
+`js-utils` is a collection of JavaScript modules designed to simplify working with commonly used functions and elements
+on web pages. The modules can be connected individually, allowing flexible control over the functionality of your
+project.
 
-[GitHub Pages](https://pages.github.com) can automatically generate and serve the website for you.
-Let's say you have a username/organisation `my-org` and project `my-proj`; if you locate Jekyll source under `docs` folder of master branch in your repo `github.com/my-org/my-proj`, the website will be served on `my-org.github.io/my-proj`.
-The good thing about coupling your documentation with the source repo is, whenever you merge features with regarding content to master branch, it will also be published on the webpage instantly.
+### Installation
 
-1. Just [download the source](https://github.com/aksakalli/jekyll-doc-theme/archive/gh-pages.zip) into your repo under `docs` folder.
-2. Edit site settings in  `_config.yml` file according to your project. !!! `baseurl` should be your website's relative URI like `/my-proj` !!!
-3. Replace `favicon.ico` and `assets/img/logonav.png` with your own logo.
+You can install the entire package via npm:
 
-## Writing content
-
-### Docs
-
-Docs are [collections](https://jekyllrb.com/docs/collections/) of pages stored under `_docs` folder. To create a new page:
-
-**1.** Create a new Markdown as `_docs/my-page.md` and write [front matter](https://jekyllrb.com/docs/frontmatter/) & content such as:
-
-```
----
-title: My Page
-permalink: /docs/my-page/
----
-
-Hello World!
+```bash
+npm install js-utils
 ```
 
-**2.** Add the pagename to `_data/docs.yml` file in order to list in docs navigation panel:
+##№ Testing and Running Examples
 
+For local development and testing of modules, a local HTTP server is provided. This allows you to view examples and run
+tests.
+
+Tests cover the main functionalities of each module and check operation in different modes.
+
+- [Cypress Documentation](https://docs.cypress.io/)
+- [Installation Notes for Linux](https://docs.cypress.io/guides/getting-started/installing-cypress#Linux-Prerequisites)
+
+### Commands
+
+- **dev**: Runs the project in development mode using Rollup and watches for changes.
+```bash
+$ npm run dev
 ```
-- title: My Group Title
-  docs:
-  - my-page
+
+- **build**: Builds the project for production using Rollup and places the compiled files in the `dist` folder.
+```bash
+$ npm run build
 ```
 
-### Blog posts
+- **start-server**: Starts a local server using http-server on port 3001.
+```bash
+$ npm run start-server
+```
 
-Add a new Markdown file such as `2017-05-09-my-post.md` and write the content similar to other post examples.
+- **cypress**: Opens the Cypress interface for manual test execution.
+```bash
+$ npm run cypress
+```
 
-### Pages
+- **tests**: Starts a local server and runs the Cypress tests, stopping the server after the tests complete.
+```bash
+$ npm run tests
+```
 
-The homepage is located under `index.html` file. You can change the content or design completely different welcome page for your taste. (You can use [bootstrap components](http://getbootstrap.com/components/))
+- **dev-tests**: Starts a local server and opens the Cypress interface for manual testing.
+```bash
+$ npm run dev-tests
+```
 
-In order to add a new page, create a new `.html` or `.md` (markdown) file under root directory and link it in `_includes/topnav.html`.
+- **jekyll-build-incremental**: Copies built files to the site and performs an incremental Jekyll build.
+```bash
+$ npm run jekyll-build-incremental
+```
+
+- **jekyll-serve**: Copies built files to the site and starts the Jekyll server on port 8080.
+```bash
+$ npm run jekyll-serve
+```
+
+- **jekyll-build**: Copies built files to the site and performs a Jekyll build.
+```bash
+$ npm run jekyll-build
+```
+
+- **copy-build-to-site**: Builds the project and copies the compiled files to `site/assets/js`.
+```bash
+$ npm run copy-build-to-site
+```
+
+## Project Structure
+
+Here is the structure of the `js-utils` project:
+
+```bash
+js-utils/
+│
+├── cypress/
+│   └── integration(tests)/
+│       ├── accordion.cy.js
+│       ├── cookie.cy.js
+│       ├── devices.cy.js
+│       ├── readMore.cy.js
+│       └── tabs.cy.js
+│ 
+├── dist/
+│   ├── js
+│   └── site
+│  
+├── js/
+│   ├── components
+│   │   ├── accordion.js
+│   │   ├── cookie.js
+│   │   ├── devices.js
+│   │   ├── readMore.js
+│   │   └── tabs.js
+│   │ 
+│   ├── examples
+│   │   ├── accordion.html
+│   │   ├── cookie.html
+│   │   ├── devices.html
+│   │   ├── readMore.html
+│   │   └── tabs.html
+│   │ 
+│   └── index.js
+│
+├── site
+│   ├──...
+│   └──...
+│
+├── cypress.config.cjs
+├── package.json
+├── README.md
+├── rollup.config.js
+└── .gitignore
+```
+
+#### Description of Structure
+
+# Project Structure
+
+- **cypress/**: Directory containing all tests written using Cypress.
+  - **integration/**: Contains test files for various components.
+    - **accordion.cy.js**: Tests for the accordion functionality.
+    - **cookie.cy.js**: Tests for the cookie handling module.
+    - **devices.cy.js**: Tests for the device detection module.
+    - **readMore.cy.js**: Tests for the "Read More" functionality.
+    - **tabs.cy.js**: Tests for the tabs module.
+
+- **dist/**: Folder for storing compiled files that are ready for production use.
+  - **js/**: Contains compiled JavaScript files.
+  - **site/**: Contains static site files (e.g., HTML, CSS, and JS) used for deployment.
+
+- **js/**: Main folder containing the source code of JavaScript modules.
+  - **components/**: Contains source JavaScript files for various components.
+    - **accordion.js**: Implementation of the accordion functionality.
+    - **cookie.js**: Implementation of the cookie handling.
+    - **devices.js**: Implementation of the device detection.
+    - **readMore.js**: Implementation of the "Read More" functionality.
+    - **tabs.js**: Implementation of the tabs functionality.
+
+  - **examples/**: Folder containing HTML example files to demonstrate the functionality of the components.
+    - **accordion.html**: Example of using the accordion.
+    - **cookie.html**: Example of using the cookie handling.
+    - **devices.html**: Example of using the device detection module.
+    - **readMore.html**: Example of using the "Read More" functionality.
+    - **tabs.html**: Example of using the tabs.
+
+  - **index.js**: Main file that initializes and exports all modules from the `components` folder.
+
+- **site/**: Folder for storing site files, which may include additional static resources, configurations, and more. (Exact contents are not specified in the structure.)
+
+- **cypress.config.cjs**: Configuration file for Cypress where test settings can be defined.
+
+- **package.json**: File describing the project, its dependencies, scripts, and metadata.
+
+- **README.md**: Project documentation containing information on how to use and install the project.
+
+- **rollup.config.js**: Configuration file for the Rollup bundler, which defines how to compile and package the modules.
+
+- **.gitignore**: File that specifies which files and folders should be ignored by Git during commits.
+
+
+This structure ensures that each module has its own documentation, examples, and tests, making them easily accessible
+and organized into separate folders.
+
+### Notes
+
+Each module can be connected individually and used as an independent component. Additional examples
+and detailed documentation are available for each module.

@@ -208,12 +208,12 @@ var tabs = (function () {
     const buttons = container.querySelectorAll("[data-tab-button]");
     const contents = container.querySelectorAll("[data-tab-content]");
     const activeButtonClass = container.dataset.activeButtonClass || 'active';
-    const mode = container.dataset.tabs;
-    const activeContentClass = mode === "openByClass" ? container.dataset.activeContentClass || 'active' : null;
+    container.dataset.tabs;
+    const activeContentClass = container.dataset.activeContentClass || 'active';
 
     buttons.forEach(button => {
       button.addEventListener("click", () => {
-        activateTab(button, contents, activeButtonClass, activeContentClass, mode);
+        activateTab(button, contents, activeButtonClass, activeContentClass);
       });
     });
 
@@ -240,7 +240,7 @@ var tabs = (function () {
     });
 
     contents.forEach(content => {
-      if (activeContentClass && mode === "openByClass") {
+      if (activeContentClass !== 'active') {
         content.classList.remove(activeContentClass);
       } else {
         content.style.display = 'none';
@@ -252,7 +252,7 @@ var tabs = (function () {
     const activeContent = [...contents].find(content => content.dataset.tabContent === targetContentValue);
 
     if (activeContent) {
-      if (mode === "openByClass") {
+      if (activeContentClass !== 'active') {
         activeContent.classList.add(activeContentClass);
       } else {
         activeContent.style.display = 'block';

@@ -93,7 +93,6 @@
 	</div>
 	<span class="read-more__button" data-read-more-toggler data-more-text="Read More" data-less-text="Hide">Read More</span>
 </div>
-
 <h1>Read More Functionality Example</h1>
 <div class="read-more" data-read-more data-read-more-active-class="custom-class">
 	<p>This is the introductory text that is always visible to users. If you want to know more, just click the button below!</p>
@@ -109,6 +108,10 @@
 </div>
 </body>
 
-<script type="module" src="../main.js"></script>
+<script type="module">
+	import { readMore } from "../index.js";
+
+	window.addEventListener("DOMContentLoaded",() => readMore.run())
+</script>
 
 </html>

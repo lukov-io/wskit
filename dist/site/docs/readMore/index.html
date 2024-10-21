@@ -11,21 +11,21 @@
 
     <link rel="shortcut icon" href="/js-utils/favicon.ico?1">
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Customization | JS Utils</title>
+<title>Documentation | JS Utils</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Customization" />
+<meta property="og:title" content="Documentation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This template uses bootstrap-sass along with bootwatch themes. You can create your own theme by writing your own sass files." />
-<meta property="og:description" content="This template uses bootstrap-sass along with bootwatch themes. You can create your own theme by writing your own sass files." />
-<link rel="canonical" href="http://localhost:8080/js-utils/docs/customization/" />
-<meta property="og:url" content="http://localhost:8080/js-utils/docs/customization/" />
+<meta name="description" content="A module for implementing a “Read More” feature that allows content to be hidden and shown by clicking a button. The user can view additional text or hide it at their discretion." />
+<meta property="og:description" content="A module for implementing a “Read More” feature that allows content to be hidden and shown by clicking a button. The user can view additional text or hide it at their discretion." />
+<link rel="canonical" href="http://localhost:8080/js-utils/docs/readMore/" />
+<meta property="og:url" content="http://localhost:8080/js-utils/docs/readMore/" />
 <meta property="og:site_name" content="JS Utils" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-10-21T18:24:21+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Customization" />
+<meta property="twitter:title" content="Documentation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2024-10-21T18:24:21+02:00","datePublished":"2024-10-21T18:24:21+02:00","description":"This template uses bootstrap-sass along with bootwatch themes. You can create your own theme by writing your own sass files.","headline":"Customization","url":"http://localhost:8080/js-utils/docs/customization/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2024-10-21T18:24:21+02:00","datePublished":"2024-10-21T18:24:21+02:00","description":"A module for implementing a “Read More” feature that allows content to be hidden and shown by clicking a button. The user can view additional text or hide it at their discretion.","headline":"Documentation","url":"http://localhost:8080/js-utils/docs/readMore/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -161,12 +161,12 @@
       </div>
       
       
-      <div class="panel-collapse collapse" id="collapse-4" role="tabpanel" aria-label="Side Navigation">
+      <div class="panel-collapse" id="collapse-4" role="tabpanel" aria-label="Side Navigation">
         <div class="list-group">
           
             
             
-            <a class="list-group-item " href="/js-utils/docs/readMore/">Documentation</a>
+            <a class="list-group-item active" href="/js-utils/docs/readMore/">Documentation</a>
           
             
             
@@ -206,19 +206,64 @@
         </div>
 
         <div class="col-md-8">
-            <h1>Customization</h1>
-            <div id="markdown-content-container"><p>This template uses <a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> along with <a href="https://bootswatch.com/3">bootwatch themes</a>.
-You can create your own theme by writing your own <code class="language-plaintext highlighter-rouge">sass</code> files.</p>
+            <h1>Documentation</h1>
+            <div id="markdown-content-container"><p>A module for implementing a “Read More” feature that allows content to be hidden and shown by clicking a button.
+The user can view additional text or hide it at their discretion.</p>
 
-<p>Create a new a theme folder like <code class="language-plaintext highlighter-rouge">_sass/bootwatch/custom</code> and set your <code class="language-plaintext highlighter-rouge">bootwatch</code> variables in <code class="language-plaintext highlighter-rouge">_config.yml</code> to <code class="language-plaintext highlighter-rouge">custom</code>:</p>
+<h3 id="usage">Usage</h3>
+<p>Import the module into your JS:</p>
+<h4 id="javascript">JavaScript</h4>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">bootwatch</span><span class="pi">:</span> <span class="s">custom</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">readMore</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">js-utils</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">readMore</span><span class="p">.</span><span class="nf">run</span><span class="p">();</span>
 </code></pre></div></div>
+
+<h4 id="html">HTML</h4>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"read-more-block"</span> <span class="na">data-read-more</span> <span class="na">data-read-more-active-class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>Content to show/hide<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">data-read-more-toggler</span> <span class="na">data-more-text=</span><span class="s">"Read More"</span> <span class="na">data-less-text=</span><span class="s">"Read Less"</span><span class="nt">&gt;</span>Read More<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h3 id="data-attributes">Data attributes</h3>
+
+<ul>
+  <li>
+    <p><strong>data-read-more</strong>: Indicates the block that will use the “Read More” functionality.</p>
+  </li>
+  <li>
+    <p><strong>data-read-more-active-class</strong>: Specifies the class that will be added to the block when the content is open
+(default is ‘active’).</p>
+  </li>
+  <li>
+    <p><strong>data-read-more-toggler</strong>: The button that controls the opening and closing of the content.</p>
+  </li>
+  <li><strong>data-more-text</strong>: The text that will be displayed on the button when the content is hidden (default is ‘Read More’).</li>
+  <li></li>
+  <li><strong>data-less-text</strong>: The text that will be displayed on the button when the content is open (default is ‘Read Less’).</li>
+</ul>
+
+<h3 id="api">API</h3>
+
+<h4 id="run"><code class="language-plaintext highlighter-rouge">run()</code></h4>
+
+<p>Initializes all “Read More” blocks on the page.</p>
+
+<p><strong>Example:</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">readMore</span><span class="p">.</span><span class="nf">run</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h3 id="notes">Notes</h3>
+
+<p>Make sure to set up the HTML structure and attributes correctly for the functionality to work properly.</p>
+
 </div>
             <div style="clear:both;">
               <p class="text-center">
                 <br />
-                <a target="_blank" href="https://github.com/lukov-io/js-utils/blob/master/site/_docs/customization.md" class="btn btn-default" role="button">
+                <a target="_blank" href="https://github.com/lukov-io/js-utils/blob/master/site/_docs/readMore.md" class="btn btn-default" role="button">
                   <i class="fa fa-pencil fa-lg"></i> Improve this page
                 </a>
               </p>
@@ -250,16 +295,29 @@ You can create your own theme by writing your own <code class="language-plaintex
 
   
   
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/js-utils/docs/devices/example/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
 
-  
-  
-
-  
-  
-
-  
-  
-
+      
+        
+        
+        <li class="next">
+          <a href="/js-utils/docs/readMore/example/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+      </ul>
+    <div class="clear"></div>
+    
 
         </div>
 

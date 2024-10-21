@@ -52,11 +52,11 @@ export default (function () {
     const contents = container.querySelectorAll("[data-tab-content]");
     const activeButtonClass = container.dataset.activeButtonClass || 'active';
     const mode = container.dataset.tabs;
-    const activeContentClass = mode === "openByClass" ? container.dataset.activeContentClass || 'active' : null;
+    const activeContentClass = container.dataset.activeContentClass || 'active';
 
     buttons.forEach(button => {
       button.addEventListener("click", () => {
-        activateTab(button, contents, activeButtonClass, activeContentClass, mode);
+        activateTab(button, contents, activeButtonClass, activeContentClass);
       });
     });
 
@@ -73,9 +73,8 @@ export default (function () {
    * @param {NodeList} contents - All tab content elements.
    * @param {string} activeButtonClass - The class to apply to the active button.
    * @param {string} activeContentClass - The class to apply to the active content.
-   * @param {string} mode - The mode of tab functionality (e.g., "openByClass" or "openAuto").
    */
-  const activateTab = (button, contents, activeButtonClass, activeContentClass, mode) => {
+  const activateTab = (button, contents, activeButtonClass, activeContentClass) => {
     const targetContentValue = button.dataset.tabButton;
 
     button.parentElement.querySelectorAll("[data-tab-button]").forEach(btn => {
@@ -83,7 +82,7 @@ export default (function () {
     });
 
     contents.forEach(content => {
-      if (activeContentClass && mode === "openByClass") {
+      if (activeContentClass !== 'active') {
         content.classList.remove(activeContentClass);
       } else {
         content.style.display = 'none';
@@ -95,7 +94,7 @@ export default (function () {
     const activeContent = [...contents].find(content => content.dataset.tabContent === targetContentValue);
 
     if (activeContent) {
-      if (mode === "openByClass") {
+      if (activeContentClass !== 'active') {
         activeContent.classList.add(activeContentClass);
       } else {
         activeContent.style.display = 'block';
