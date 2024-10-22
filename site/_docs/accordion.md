@@ -1,10 +1,12 @@
 ---
 title: Documentation
 permalink: /docs/accordion/
+tags: 
+  - accordion
 ---
 
-Accordion module. This module provides the ability to initialize accordions, allowing elements to expand and collapse 
-based on user interaction. 
+A module for implementing tab functionality, allowing users to switch between different sections of content using buttons. Users can easily browse different tabs without reloading the page.
+
 
 ### Usage 
 Import the module into your JS:
@@ -53,14 +55,6 @@ Initializes the accordion functionality by finding all accordions in the documen
 ```javascript
 accordion.run();
 ```
-
-#### Other functions
-
-- **resetState(accordion, itemActiveClass)**
-  - Resets the accordion state by removing the active class from all items.
-
-- **handleItemClick(event, accordion)**
-  - Handles the click event on the accordion item.
 
 ### Notes
 

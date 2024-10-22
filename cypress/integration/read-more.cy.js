@@ -1,6 +1,6 @@
 describe('Read More Functionality', () => {
   beforeEach(() => {
-    cy.visit('/examples/readMore.html');
+    cy.visit('/readMore.html');
   });
 
   const defaultReadMore = () => cy.get('[data-read-more]:not([data-read-more-active-class])');

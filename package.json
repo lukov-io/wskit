@@ -1,21 +1,20 @@
 {
   "name": "js-utils",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
-  "main": "dist/bundle.js",
+  "main": "dist/js/bundle.js",
   "scripts": {
     "dev": "rollup -c -w --environment NODE_ENV:development",
     "build": "rollup -c --environment NODE_ENV:production",
-    "start-server": "npx http-server js -p 3001",
-
+    "start-server": "npx http-server -p 3001",
     "cypress": "cypress open --browser chrome",
     "tests": "npm run start-server & cypress run --browser chrome && kill $!",
     "dev-tests": "npm run start-server & npm run cypress",
-
     "jekyll-build-incremental": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml --incremental",
-    "jekyll-serve": "npm run copy-build-to-site && jekyll serve --port 8080 --source site --destination dist/site --config site/_config.yml --incremental",
+    "jekyll-serve": "npm run copy-build-to-site && jekyll serve --port 8080 --source site --destination dist/site --config site/_config.yml --disable-disk-cache -w",
     "jekyll-build": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml",
-    "copy-build-to-site": "npm run build && cp -R dist/js/* site/assets/js"
+    "copy-build-to-site": "npm run build && cp -R dist/js/* site/assets/js",
+    "prepare": "husky"
   },
   "type": "module",
   "keywords": [
@@ -41,18 +40,18 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
-    "rollup-plugin-delete": "^2.1.0",
     "cypress": "^13.15.0",
     "del-cli": "^6.0.0",
     "gh-pages": "^6.2.0",
+    "husky": "^9.1.6",
     "rollup": "^2.79.2",
+    "rollup-plugin-delete": "^2.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-url": "^3.0.1"
   },
   "directories": {
-    "doc": "js/_post/docs",
-    "example": "js/examples",
+    "doc": "js/docs",
+    "example": "html-examples/examples",
     "test": "cypress/integration"
-  },
-  "dependencies": {}
+  }
 }

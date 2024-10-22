@@ -1,8 +1,9 @@
 ---
 title: Examples
 permalink: /docs/accordion/example/
+tags: 
+  - accordion
 ---
-
 Examples of the accordion module 
 <script type="module">
   import { accordion } from "/js-utils/assets/js/bundle.js";
@@ -33,7 +34,7 @@ Examples of the accordion module
       .active {
         background-color: #f0f9f9;
 
-        > .accordion__item-content {
+        & > .accordion__item-content {
             display: block;
         }
       }
@@ -53,7 +54,7 @@ Examples of the accordion module
       .active-red	{
         background-color: #CD5C5C;
 
-        > .accordion__item-content {
+        & > .accordion__item-content {
           height: fit-content;
           padding: 10px;
           border: 1px solid #ccc;

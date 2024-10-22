@@ -10,7 +10,13 @@ export default [
       file: 'dist/js/bundle.js',
       format: 'esm',
       sourcemap: true,
-    }
+    },
+    plugins: [
+      resolve(),
+      commonjs(),
+      babel({ babelHelpers: 'bundled' }),
+      terser()
+    ]
   },
   {
     input: 'js/components/accordion.js',
@@ -18,7 +24,13 @@ export default [
       file: 'dist/js/components/accordion.js',
       format: 'es',
       sourcemap: false,
-    }
+    },
+    plugins: [
+      resolve(),
+      commonjs(),
+      babel({ babelHelpers: 'bundled' }),
+      terser()
+    ]
   },
   {
     input: 'js/components/cookie.js',
@@ -26,7 +38,13 @@ export default [
       file: 'dist/js/components/cookie.js',
       format: 'es',
       sourcemap: false,
-    }
+    },
+    plugins: [
+      resolve(),
+      commonjs(),
+      babel({ babelHelpers: 'bundled' }),
+      terser()
+    ]
   },
   {
     input: 'js/components/devices.js',
@@ -34,7 +52,13 @@ export default [
       file: 'dist/js/components/devices.js',
       format: 'es',
       sourcemap: false,
-    }
+    },
+    plugins: [
+      resolve(),
+      commonjs(),
+      babel({ babelHelpers: 'bundled' }),
+      terser()
+    ]
   },
   {
     input: 'js/components/readMore.js',
@@ -42,7 +66,13 @@ export default [
       file: 'dist/js/components/readMore.js',
       format: 'es',
       sourcemap: false,
-    }
+    },
+    plugins: [
+      resolve(),
+      commonjs(),
+      babel({ babelHelpers: 'bundled' }),
+      terser()
+    ]
   },
   {
     input: 'js/components/tabs.js',
@@ -50,6 +80,12 @@ export default [
       file: 'dist/js/components/tabs.js',
       format: 'es',
       sourcemap: false,
-    }
+    },
+    plugins: [
+      resolve(),
+      commonjs(),
+      babel({ babelHelpers: 'bundled' }),
+      terser()
+    ]
   }
 ];

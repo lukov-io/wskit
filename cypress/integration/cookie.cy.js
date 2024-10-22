@@ -1,7 +1,6 @@
 describe('Cookie', () => {
-
   beforeEach(() => {
-    cy.visit('/examples/cookie.html');
+    cy.visit('/cookie.html');
     cy.clearAllCookies();
   });
 
