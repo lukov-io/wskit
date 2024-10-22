@@ -1,6 +1,8 @@
 ---
 title: Examples
 permalink: /docs/devices/example/
+tags: 
+  - devices
 ---
 
 Device Type Detection Example
@@ -41,6 +43,7 @@ Device Type Detection Example
   * {
     box-sizing: border-box;
   }
+
   .example-container {
     max-width: 100%;
     padding: max(20px, 3vw);
@@ -48,6 +51,7 @@ Device Type Detection Example
     flex-direction: column;
     align-items: center
   }
+
   h5 {
     font-size: max(22px, 1vw);
     width: 100%;
@@ -55,6 +59,7 @@ Device Type Detection Example
     white-space: wrap;
     text-align: center;  
   }
+
   button {
     padding: 10px 20px;
     margin: 10px;

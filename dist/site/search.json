@@ -1,90 +1,82 @@
 [
 
-  
-    
-    
-    {
-      "title": "Documentation",
-      "url": "/js-utils/docs/accordion/"
-    },
-  
-    
-    
-    {
-      "title": "Examples",
-      "url": "/js-utils/docs/accordion/example/"
-    },
-  
-
-  
-    
-    
-    {
-      "title": "Documentation",
-      "url": "/js-utils/docs/cookie/"
-    },
-  
-    
-    
-    {
-      "title": "Examples",
-      "url": "/js-utils/docs/cookie/example/"
-    },
-  
-
-  
-    
-    
-    {
-      "title": "Documentation",
-      "url": "/js-utils/docs/devices/"
-    },
-  
-    
-    
-    {
-      "title": "Examples",
-      "url": "/js-utils/docs/devices/example/"
-    },
-  
-
-  
-    
-    
-    {
-      "title": "Documentation",
-      "url": "/js-utils/docs/readMore/"
-    },
-  
-    
-    
-    {
-      "title": "Examples",
-      "url": "/js-utils/docs/readMore/example/"
-    },
-  
-
-  
-    
-    
-    {
-      "title": "Documentation",
-      "url": "/js-utils/docs/tabs/"
-    },
-  
-    
-    
-    {
-      "title": "Examples",
-      "url": "/js-utils/docs/tabs/example/"
-    },
-  
 
 
-  
-  {
-  "title": "Welcome JS Utils",
-  "url": "/js-utils/blog/2024/10/18/welcome-js-utils/"
-  }
-  
+
+      {
+      "url": "/js-utils/docs/accordion/",
+      "tags": ["accordion"]
+      },
+
+
+
+      {
+      "url": "/js-utils/docs/accordion/example/",
+      "tags": ["accordion"]
+      },
+
+
+
+
+
+      {
+      "url": "/js-utils/docs/cookie/",
+      "tags": ["cookie"]
+      },
+
+
+
+      {
+      "url": "/js-utils/docs/cookie/example/",
+      "tags": ["cookie"]
+      },
+
+
+
+
+
+      {
+      "url": "/js-utils/docs/devices/",
+      "tags": ["devices"]
+      },
+
+
+
+      {
+      "url": "/js-utils/docs/devices/example/",
+      "tags": ["devices"]
+      },
+
+
+
+
+
+      {
+      "url": "/js-utils/docs/readMore/",
+      "tags": ["readMore"]
+      },
+
+
+
+      {
+      "url": "/js-utils/docs/readMore/example/",
+      "tags": ["readMore"]
+      },
+
+
+
+
+
+      {
+      "url": "/js-utils/docs/tabs/",
+      "tags": ["tabs"]
+      },
+
+
+
+      {
+      "url": "/js-utils/docs/tabs/example/",
+      "tags": ["tabs"]
+      }
+
 ]

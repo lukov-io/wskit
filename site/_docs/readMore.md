@@ -1,6 +1,8 @@
 ---
 title: Documentation
 permalink: /docs/readMore/
+tags: 
+  - readMore
 ---
 
 A module for implementing a "Read More" feature that allows content to be hidden and shown by clicking a button.

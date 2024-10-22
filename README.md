@@ -6,6 +6,8 @@
 on web pages. The modules can be connected individually, allowing flexible control over the functionality of your 
 project.
 
+- [Documentation](https://lukov-io.github.io/js-utils/)
+
 ## Installation
 
 You can install the entire package via npm:
@@ -19,14 +21,14 @@ npm install js-utils
 ### cookie
 
 A module for working with cookies: setting and retrieving values.
-- [cookie Documentation](js/docs/cookie.md)
-- [cookie Example](js/examples/cookie.html)
+- [cookie Documentation](https://lukov-io.github.io/js-utils/docs/cookie/)
+- [cookie Example](https://lukov-io.github.io/js-utils/docs/cookie/example/)
 
 ### tabs
 
 A module for implementing tabs with various behavior modes.
-- [tabs Documentation](js/docs/tabs.md)
-- [tabs Example](js/examples/tabs.html)
+- [tabs Documentation](https://lukov-io.github.io/js-utils/docs/tabs/)
+- [tabs Example](https://lukov-io.github.io/js-utils/docs/tabs/example/)
 
 ### accordion
 
@@ -37,14 +39,14 @@ A module for creating accordions with the ability to display one or multiple ope
 ### readMore
 
 A module for hiding and showing long texts with a "Read More" button.
-- [readMore Documentation](js/docs/readMore.md)
-- [readMore Example](js/examples/readMore.html)
+- [readMore Documentation](https://lukov-io.github.io/js-utils/docs/readMore/)
+- [readMore Example](https://lukov-io.github.io/js-utils/docs/readMore/example/)
 
 ### devices
 
 A module for detecting the type of device (mobile or desktop).
-- [devices Documentation](js/docs/devices.md)
-- [devices Example](js/examples/devices.html)
+- [devices Documentation](https://lukov-io.github.io/js-utils/docs/devices/)
+- [devices Example](https://lukov-io.github.io/js-utils/docs/devices/example/)
 
 ## Testing and Running Examples
 

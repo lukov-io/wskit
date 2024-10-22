@@ -1,6 +1,8 @@
 ---
 title: Documentation
 permalink: /docs/tabs/
+tags: 
+  - tabs
 ---
 
 Accordion module. This module provides the ability to initialize accordions, allowing elements to expand and collapse 

@@ -1,6 +1,8 @@
 ---
 title: Examples
 permalink: /docs/readMore/example/
+tags:
+  - readMore
 ---
 Examples of the accordion module 
 <script type="module">

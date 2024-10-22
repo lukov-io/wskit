@@ -5276,7 +5276,7 @@ a.badge:hover, a.badge:focus {
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 400;
 }
 .jumbotron > hr {
   border-top-color: gainsboro;
@@ -8278,7 +8278,7 @@ body {
 
 .header-container {
   background-color: black;
-  background: url("../img/bg.jpg") no-repeat 50% 0;
+  background: url("../img/bg.png") no-repeat 50% 0;
   color: #fff;
   background-size: cover;
   background-position: center 36%;

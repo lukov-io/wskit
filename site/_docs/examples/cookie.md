@@ -1,6 +1,8 @@
 ---
 title: Examples
 permalink: /docs/cookie/example/
+tags: 
+  - cookie
 ---
 
 Example of working with cookies
@@ -52,10 +54,6 @@ Example of working with cookies
 <style>
   * {
     box-sizing: border-box;
-  }
-
-  h1 {
-    text-align: center;
   }
 
   h2	{

@@ -1,6 +1,8 @@
 ---
 title: Documentation
 permalink: /docs/accordion/
+tags: 
+  - accordion
 ---
 
 A module for implementing tab functionality, allowing users to switch between different sections of content using buttons. Users can easily browse different tabs without reloading the page.

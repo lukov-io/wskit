@@ -1,6 +1,8 @@
 ---
 title: Examples
 permalink: /docs/tabs/example/
+tags: 
+  - tabs
 ---
 Examples of the accordion module 
 <script type="module">

@@ -73,9 +73,8 @@ var tabs = (function () {
    * @param {NodeList} contents - All tab content elements.
    * @param {string} activeButtonClass - The class to apply to the active button.
    * @param {string} activeContentClass - The class to apply to the active content.
-   * @param {string} mode - The mode of tab functionality (e.g., "openByClass" or "openAuto").
    */
-  const activateTab = (button, contents, activeButtonClass, activeContentClass, mode) => {
+  const activateTab = (button, contents, activeButtonClass, activeContentClass) => {
     const targetContentValue = button.dataset.tabButton;
 
     button.parentElement.querySelectorAll("[data-tab-button]").forEach(btn => {

@@ -16,7 +16,7 @@ You can install the entire package via npm:
 npm install js-utils
 ```
 
-##№ Testing and Running Examples
+### Testing and Running Examples
 
 For local development and testing of modules, a local HTTP server is provided. This allows you to view examples and run
 tests.
@@ -95,8 +95,19 @@ js-utils/
 │ 
 ├── dist/
 │   ├── js
+│   │   ├── components
+│   │   └── bundle.js
+│   │
 │   └── site
-│  
+│       └── ...
+│ 
+├── html-examples
+│   ├── accordion.html
+│   ├── cookie.html
+│   ├── devices.html
+│   ├── readMore.html
+│   └── tabs.html
+│ 
 ├── js/
 │   ├── components
 │   │   ├── accordion.js
@@ -104,13 +115,6 @@ js-utils/
 │   │   ├── devices.js
 │   │   ├── readMore.js
 │   │   └── tabs.js
-│   │ 
-│   ├── examples
-│   │   ├── accordion.html
-│   │   ├── cookie.html
-│   │   ├── devices.html
-│   │   ├── readMore.html
-│   │   └── tabs.html
 │   │ 
 │   └── index.js
 │
@@ -141,6 +145,13 @@ js-utils/
   - **js/**: Contains compiled JavaScript files.
   - **site/**: Contains static site files (e.g., HTML, CSS, and JS) used for deployment.
 
+- **html-examples/**: Folder containing HTML example files to demonstrate the functionality of the components.
+  - **accordion.html**: Example of using the accordion.
+  - **cookie.html**: Example of using the cookie handling.
+  - **devices.html**: Example of using the device detection module.
+  - **readMore.html**: Example of using the "Read More" functionality.
+  - **tabs.html**: Example of using the tabs.
+
 - **js/**: Main folder containing the source code of JavaScript modules.
   - **components/**: Contains source JavaScript files for various components.
     - **accordion.js**: Implementation of the accordion functionality.
@@ -148,13 +159,6 @@ js-utils/
     - **devices.js**: Implementation of the device detection.
     - **readMore.js**: Implementation of the "Read More" functionality.
     - **tabs.js**: Implementation of the tabs functionality.
-
-  - **examples/**: Folder containing HTML example files to demonstrate the functionality of the components.
-    - **accordion.html**: Example of using the accordion.
-    - **cookie.html**: Example of using the cookie handling.
-    - **devices.html**: Example of using the device detection module.
-    - **readMore.html**: Example of using the "Read More" functionality.
-    - **tabs.html**: Example of using the tabs.
 
   - **index.js**: Main file that initializes and exports all modules from the `components` folder.
 

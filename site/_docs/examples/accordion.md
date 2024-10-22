@@ -1,6 +1,8 @@
 ---
 title: Examples
 permalink: /docs/accordion/example/
+tags: 
+  - accordion
 ---
 Examples of the accordion module 
 <script type="module">

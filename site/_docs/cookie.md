@@ -1,6 +1,8 @@
 ---
 title: Documentation
 permalink: /docs/cookie/
+tags: 
+  - cookie
 ---
 A module for managing cookies. This module provides functions for setting, getting, and removing cookies.
 

@@ -1,6 +1,8 @@
 ---
 title: Documentation
 permalink: /docs/devices/
+tags: 
+  - devices
 ---
 
 A module for determining the type of device and orientation. This module allows you to check whether the 

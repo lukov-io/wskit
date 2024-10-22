@@ -21,11 +21,11 @@
 <meta property="og:url" content="http://localhost:8080/js-utils/docs/home/" />
 <meta property="og:site_name" content="JS Utils" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-10-21T18:24:21+02:00" />
+<meta property="article:published_time" content="2024-10-22T14:42:46+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="JS Utils" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2024-10-21T18:24:21+02:00","datePublished":"2024-10-21T18:24:21+02:00","description":"js-utils is a collection of JavaScript modules designed to simplify working with commonly used functions and elements on web pages. The modules can be connected individually, allowing flexible control over the functionality of your project.","headline":"JS Utils","url":"http://localhost:8080/js-utils/docs/home/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2024-10-22T14:42:46+02:00","datePublished":"2024-10-22T14:42:46+02:00","description":"js-utils is a collection of JavaScript modules designed to simplify working with commonly used functions and elements on web pages. The modules can be connected individually, allowing flexible control over the functionality of your project.","headline":"JS Utils","url":"http://localhost:8080/js-utils/docs/home/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -51,7 +51,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li  class="active" ><a href="/js-utils/docs/home/">Docs</a></li>
-                <li ><a href="/js-utils/blog/2024/10/18/welcome-js-utils/">Blog</a></li>
+                <!--<li ><a href="/js-utils/blog/2024/10/18/welcome-js-utils/">Blog</a></li>-->
             </ul>
             <div class="navbar-right">
                 <form class="navbar-form navbar-left">
@@ -218,7 +218,7 @@ project.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>js-utils
 </code></pre></div></div>
 
-<p>##№ Testing and Running Examples</p>
+<h3 id="testing-and-running-examples">Testing and Running Examples</h3>
 
 <p>For local development and testing of modules, a local HTTP server is provided. This allows you to view examples and run
 tests.</p>
@@ -291,8 +291,19 @@ tests.</p>
 │ 
 ├── dist/
 │   ├── js
+│   │   ├── components
+│   │   └── bundle.js
+│   │
 │   └── site
-│  
+│       └── ...
+│ 
+├── html-examples
+│   ├── accordion.html
+│   ├── cookie.html
+│   ├── devices.html
+│   ├── readMore.html
+│   └── tabs.html
+│ 
 ├── js/
 │   ├── components
 │   │   ├── accordion.js
@@ -300,13 +311,6 @@ tests.</p>
 │   │   ├── devices.js
 │   │   ├── readMore.js
 │   │   └── tabs.js
-│   │ 
-│   ├── examples
-│   │   ├── accordion.html
-│   │   ├── cookie.html
-│   │   ├── devices.html
-│   │   ├── readMore.html
-│   │   └── tabs.html
 │   │ 
 │   └── index.js
 │
@@ -345,6 +349,15 @@ tests.</p>
       <li><strong>site/</strong>: Contains static site files (e.g., HTML, CSS, and JS) used for deployment.</li>
     </ul>
   </li>
+  <li><strong>html-examples/</strong>: Folder containing HTML example files to demonstrate the functionality of the components.
+    <ul>
+      <li><strong>accordion.html</strong>: Example of using the accordion.</li>
+      <li><strong>cookie.html</strong>: Example of using the cookie handling.</li>
+      <li><strong>devices.html</strong>: Example of using the device detection module.</li>
+      <li><strong>readMore.html</strong>: Example of using the “Read More” functionality.</li>
+      <li><strong>tabs.html</strong>: Example of using the tabs.</li>
+    </ul>
+  </li>
   <li><strong>js/</strong>: Main folder containing the source code of JavaScript modules.
     <ul>
       <li><strong>components/</strong>: Contains source JavaScript files for various components.
@@ -354,15 +367,6 @@ tests.</p>
           <li><strong>devices.js</strong>: Implementation of the device detection.</li>
           <li><strong>readMore.js</strong>: Implementation of the “Read More” functionality.</li>
           <li><strong>tabs.js</strong>: Implementation of the tabs functionality.</li>
-        </ul>
-      </li>
-      <li><strong>examples/</strong>: Folder containing HTML example files to demonstrate the functionality of the components.
-        <ul>
-          <li><strong>accordion.html</strong>: Example of using the accordion.</li>
-          <li><strong>cookie.html</strong>: Example of using the cookie handling.</li>
-          <li><strong>devices.html</strong>: Example of using the device detection module.</li>
-          <li><strong>readMore.html</strong>: Example of using the “Read More” functionality.</li>
-          <li><strong>tabs.html</strong>: Example of using the tabs.</li>
         </ul>
       </li>
       <li><strong>index.js</strong>: Main file that initializes and exports all modules from the <code class="language-plaintext highlighter-rouge">components</code> folder.</li>
@@ -453,7 +457,7 @@ and detailed documentation are available for each module.</p>
 
         <p class="text-center">
             JS Utils 2024 |
-            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+            Powered by <a href="https://lukov.io">lukov.io</a>
         </p>
         <!-- <p class="text-muted">Place sticky footer content here.</p> -->
     </div>
