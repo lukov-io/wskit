@@ -2,7 +2,7 @@
   "name": "js-utils",
   "version": "1.0.5",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
-  "main": "dist/bundle.js",
+  "main": "dist/js/bundle.js",
   "scripts": {
     "dev": "rollup -c -w --environment NODE_ENV:development",
     "build": "rollup -c --environment NODE_ENV:production",

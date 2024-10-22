@@ -1,1 +1,1 @@
-Sitemap: http://localhost:8080/js-utils/sitemap.xml
+Sitemap: https://lukov-io.github.io/js-utils/js-utils/sitemap.xml
