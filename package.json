@@ -1,6 +1,6 @@
 {
   "name": "js-utils",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
   "main": "dist/js/bundle.js",
   "scripts": {
