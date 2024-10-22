@@ -13,7 +13,8 @@
     "jekyll-build-incremental": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml --incremental",
     "jekyll-serve": "npm run copy-build-to-site && jekyll serve --port 8080 --source site --destination dist/site --config site/_config.yml --disable-disk-cache -w",
     "jekyll-build": "npm run copy-build-to-site && jekyll build --source site --destination dist/site --config site/_config.yml",
-    "copy-build-to-site": "npm run build && cp -R dist/js/* site/assets/js"
+    "copy-build-to-site": "npm run build && cp -R dist/js/* site/assets/js",
+    "prepare": "husky"
   },
   "type": "module",
   "keywords": [
@@ -42,6 +43,7 @@
     "cypress": "^13.15.0",
     "del-cli": "^6.0.0",
     "gh-pages": "^6.2.0",
+    "husky": "^9.1.6",
     "rollup": "^2.79.2",
     "rollup-plugin-delete": "^2.1.0",
     "rollup-plugin-terser": "^7.0.2",
