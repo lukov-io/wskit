@@ -14,11 +14,6 @@ Examples of the accordion module
     box-sizing: border-box;
   }
 
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-
   p {
     margin-top: 0;
     margin-bottom: 20px;

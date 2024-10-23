@@ -34,7 +34,7 @@ Sets a cookie with the specified name, value, and expiration time in days.
 - `value` (string): The value of the cookie.
 - `days` (number): The expiration time in days.
 
-####`get(name)`
+#### `get(name)`
 
 Gets the value of a cookie by its name.
 

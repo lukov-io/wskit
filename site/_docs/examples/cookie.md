@@ -56,10 +56,6 @@ Example of working with cookies
     box-sizing: border-box;
   }
 
-  h2	{
-    margin: 0;
-  }
-
   .cookie {
     max-width: 100%;
     height: 300px;
