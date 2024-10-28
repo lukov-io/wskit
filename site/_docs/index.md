@@ -122,6 +122,7 @@ js-utils/
 │   ├──...
 │   └──...
 │
+├── .npmignore
 ├── cypress.config.cjs
 ├── package.json
 ├── README.md
@@ -173,7 +174,6 @@ js-utils/
 - **rollup.config.js**: Configuration file for the Rollup bundler, which defines how to compile and package the modules.
 
 - **.gitignore**: File that specifies which files and folders should be ignored by Git during commits.
-
 
 This structure ensures that each module has its own documentation, examples, and tests, making them easily accessible
 and organized into separate folders.
