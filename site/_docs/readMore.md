@@ -13,7 +13,7 @@ Import the module into your JS:
 #### JavaScript
 
 ```javascript
-import { readMore } from 'js-utils';
+import { readMore } from '@lukovio/wskit';
 
 readMore.run();
 ```

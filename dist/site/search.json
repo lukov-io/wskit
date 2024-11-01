@@ -5,14 +5,14 @@
     
     {
       "title": "Documentation",
-      "url": "/js-utils/docs/accordion/"
+      "url": "/wskit/docs/accordion/"
     },
   
     
     
     {
       "title": "Examples",
-      "url": "/js-utils/docs/accordion/example/"
+      "url": "/wskit/docs/accordion/example/"
     },
   
 
@@ -21,14 +21,14 @@
     
     {
       "title": "Documentation",
-      "url": "/js-utils/docs/cookie/"
+      "url": "/wskit/docs/cookie/"
     },
   
     
     
     {
       "title": "Examples",
-      "url": "/js-utils/docs/cookie/example/"
+      "url": "/wskit/docs/cookie/example/"
     },
   
 
@@ -37,14 +37,14 @@
     
     {
       "title": "Documentation",
-      "url": "/js-utils/docs/devices/"
+      "url": "/wskit/docs/devices/"
     },
   
     
     
     {
       "title": "Examples",
-      "url": "/js-utils/docs/devices/example/"
+      "url": "/wskit/docs/devices/example/"
     },
   
 
@@ -53,14 +53,14 @@
     
     {
       "title": "Documentation",
-      "url": "/js-utils/docs/readMore/"
+      "url": "/wskit/docs/readMore/"
     },
   
     
     
     {
       "title": "Examples",
-      "url": "/js-utils/docs/readMore/example/"
+      "url": "/wskit/docs/readMore/example/"
     },
   
 
@@ -69,22 +69,22 @@
     
     {
       "title": "Documentation",
-      "url": "/js-utils/docs/tabs/"
+      "url": "/wskit/docs/tabs/"
     },
   
     
     
     {
       "title": "Examples",
-      "url": "/js-utils/docs/tabs/example/"
+      "url": "/wskit/docs/tabs/example/"
     },
   
 
 
   
   {
-  "title": "Welcome JS Utils",
-  "url": "/js-utils/blog/2024/10/18/welcome-js-utils/"
+  "title": "Welcome WSKit",
+  "url": "/wskit/blog/2024/10/18/welcome-js-utils/"
   }
   
 ]

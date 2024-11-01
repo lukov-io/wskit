@@ -6,7 +6,7 @@ tags:
 ---
 Examples of the accordion module 
 <script type="module">
-  import { tabs } from "/js-utils/assets/js/bundle.js";
+  import { tabs } from "/wskit/assets/js/bundle.js";
   tabs.run();
 </script>
 <style>
@@ -120,7 +120,7 @@ Examples of the accordion module
   <div class="tab-pane fade" id="js_default">
 {% highlight html %}
 <script type="module">
-  import { tabs } from "js-utils";
+  import { tabs } from "wskit";
   tabs.run();
 </script>
 {% endhighlight %}
@@ -220,7 +220,7 @@ Set `data-active-button-class="{class}"` and `data-active-content-class="{class}
   <div class="tab-pane fade" id="js_active-class">
 {% highlight html %}
 <script type="module">
-  import { tabs } from "js-utils";
+  import { tabs } from "wskit";
   tabs.run();
 </script>
 {% endhighlight %}

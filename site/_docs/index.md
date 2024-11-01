@@ -1,10 +1,10 @@
 ---
-title: JS Utils 
+title: WSKit 
 permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-`js-utils` is a collection of JavaScript modules designed to simplify working with commonly used functions and elements
+`wskit` is a collection of JavaScript modules designed to simplify working with commonly used functions and elements
 on web pages. The modules can be connected individually, allowing flexible control over the functionality of your
 project.
 
@@ -13,7 +13,7 @@ project.
 You can install the entire package via npm:
 
 ```bash
-npm install js-utils
+npm install @lukovio/wskit
 ```
 
 ### Testing and Running Examples
@@ -80,10 +80,10 @@ $ npm run copy-build-to-site
 
 ## Project Structure
 
-Here is the structure of the `js-utils` project:
+Here is the structure of the `wskit` project:
 
 ```bash
-js-utils/
+wskit/
 │
 ├── cypress/
 │   └── integration(tests)/

@@ -12,7 +12,7 @@ A module for implementing tab functionality, allowing users to switch between di
 Import the module into your JS:
 #### JavaScript
 ```javascript
-import { accordion } from 'js-utils';
+import { accordion } from '@lukovio/wskit';
 
 accordion.run();
 ```

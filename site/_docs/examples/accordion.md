@@ -6,7 +6,7 @@ tags:
 ---
 Examples of the accordion module 
 <script type="module">
-  import { accordion } from "/js-utils/assets/js/bundle.js";
+  import { accordion } from "/wskit/assets/js/bundle.js";
   accordion.run();
 </script>
 <style>
@@ -111,7 +111,7 @@ Set `data-accordion` (or `data-accordion='single'` used as default mode)
   <div class="tab-pane fade" id="js_default">
 {% highlight html %}
 <script type="module">
-  import { accordion } from "js-utils";
+  import { accordion } from "@lukovio/wskit"
   accordion.run();
 </script>
 {% endhighlight %}
@@ -182,7 +182,7 @@ Set `data-accordion="multiple"` attribute
   <div class="tab-pane fade" id="js_multiple">
 {% highlight html %}
 <script type="module">
-  import { accordion } from "js-utils";
+  import { accordion } from "@lukovio/wskit"
   accordion.run();
 </script>
 {% endhighlight %}
@@ -274,7 +274,7 @@ Set `data-item-active-class="{class}"` attribute
   <div class="tab-pane fade" id="js_active-class">
 {% highlight html %}
 <script type="module">
-  import { accordion } from "js-utils";
+  import { accordion } from "@lukovio/wskit"
   accordion.run();
 </script>
 {% endhighlight %}
@@ -366,7 +366,7 @@ Set all of attributes
   <div class="tab-pane fade" id="js_full">
 {% highlight html %}
 <script type="module">
-  import { accordion } from "js-utils";
+  import { accordion } from "@lukovio/wskit"
   accordion.run();
 </script>
 {% endhighlight %}

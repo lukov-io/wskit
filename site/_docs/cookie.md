@@ -9,7 +9,7 @@ A module for managing cookies. This module provides functions for setting, getti
 ### Usage 
 Import the module into your JS:
 ```javascript
-import { cookie } from 'js-utils';
+import { cookie } from '@lukovio/wskit';
 ```
 
 #### Example Usage

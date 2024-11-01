@@ -1,19 +1,19 @@
-# JS Utils
+# WSKit
 
 ## Description
 
-`js-utils` is a collection of JavaScript modules designed to simplify working with commonly used functions and elements 
+`wskit` is a collection of JavaScript modules designed to simplify working with commonly used functions and elements 
 on web pages. The modules can be connected individually, allowing flexible control over the functionality of your 
 project.
 
-- [Documentation](https://lukov-io.github.io/js-utils/)
+- [Documentation](https://lukov-io.github.io/wskit/)
 
 ## Installation
 
 You can install the entire package via npm:
 
 ```bash
-npm install js-utils
+npm install @lukovio/wskit
 ```
 
 ## List of Modules
@@ -21,32 +21,32 @@ npm install js-utils
 ### cookie
 
 A module for working with cookies: setting and retrieving values.
-- [cookie Documentation](https://lukov-io.github.io/js-utils/docs/cookie/)
-- [cookie Example](https://lukov-io.github.io/js-utils/docs/cookie/example/)
+- [cookie Documentation](https://lukov-io.github.io/wskit/docs/cookie/)
+- [cookie Example](https://lukov-io.github.io/wskit/docs/cookie/example/)
 
 ### tabs
 
 A module for implementing tabs with various behavior modes.
-- [tabs Documentation](https://lukov-io.github.io/js-utils/docs/tabs/)
-- [tabs Example](https://lukov-io.github.io/js-utils/docs/tabs/example/)
+- [tabs Documentation](https://lukov-io.github.io/wskit/docs/tabs/)
+- [tabs Example](https://lukov-io.github.io/wskit/docs/tabs/example/)
 
 ### accordion
 
 A module for creating accordions with the ability to display one or multiple open items.
-- [Documentation](https://lukov-io.github.io/js-utils/docs/accordion/)
-- [Examples](https://lukov-io.github.io/js-utils/docs/accordion/example/)
+- [Documentation](https://lukov-io.github.io/wskit/docs/accordion/)
+- [Examples](https://lukov-io.github.io/wskit/docs/accordion/example/)
 
 ### readMore
 
 A module for hiding and showing long texts with a "Read More" button.
-- [readMore Documentation](https://lukov-io.github.io/js-utils/docs/readMore/)
-- [readMore Example](https://lukov-io.github.io/js-utils/docs/readMore/example/)
+- [readMore Documentation](https://lukov-io.github.io/wskit/docs/readMore/)
+- [readMore Example](https://lukov-io.github.io/wskit/docs/readMore/example/)
 
 ### devices
 
 A module for detecting the type of device (mobile or desktop).
-- [devices Documentation](https://lukov-io.github.io/js-utils/docs/devices/)
-- [devices Example](https://lukov-io.github.io/js-utils/docs/devices/example/)
+- [devices Documentation](https://lukov-io.github.io/wskit/docs/devices/)
+- [devices Example](https://lukov-io.github.io/wskit/docs/devices/example/)
 
 ## Testing and Running Examples
 
@@ -112,10 +112,10 @@ Tests cover the main functionalities of each module and check operation in diffe
 
 # Project Structure
 
-Here is the structure of the `js-utils` project:
+Here is the structure of the `wskit` project:
 
 ```bash
-js-utils/
+wskit/
 │
 ├── cypress/
 │   └── integration(tests)/

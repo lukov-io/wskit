@@ -7,7 +7,7 @@ tags:
 
 Device Type Detection Example
 <script type="module">
-  import { devices } from "/js-utils/assets/js/bundle.js";
+  import { devices } from "/wskit/assets/js/bundle.js";
   document.addEventListener('DOMContentLoaded', function() {getDevice()});
   function getDevice(){
     const checkDeviceButtons = document.getElementById('check-device');
