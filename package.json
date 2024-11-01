@@ -1,5 +1,5 @@
 {
-  "name": "wskit",
+  "name": "@lukovio/wskit",
   "version": "1.0.0",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
   "main": "dist/js/bundle.js",
