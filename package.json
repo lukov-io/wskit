@@ -1,5 +1,5 @@
 {
-  "name": "js-utils",
+  "name": "@lukovio/wskit",
   "version": "1.0.0",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
   "main": "dist/js/bundle.js",
@@ -29,12 +29,12 @@
   "author": "lukov.io/IktaNikuba",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukov-io/js-utils"
+    "url": "https://github.com/lukov-io/wskit"
   },
   "bugs": {
-    "url": "https://github.com/lukov-io/js-utils/issues"
+    "url": "https://github.com/lukov-io/wskit/issues"
   },
-  "homepage": "https://github.com/lukov-io/js-utils#readme",
+  "homepage": "https://github.com/lukov-io/wskit#readme",
   "private": false,
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",

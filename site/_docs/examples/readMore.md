@@ -6,17 +6,12 @@ tags:
 ---
 Examples of the accordion module 
 <script type="module">
-  import { readMore } from "/js-utils/assets/js/bundle.js";
+  import { readMore } from "/wskit/assets/js/bundle.js";
   readMore.run();
 </script>
 <style>
   * {
     box-sizing: border-box;
-  }
-
-  h1 {
-    text-align: center;
-    color: #333;
   }
 
   p {
@@ -113,7 +108,7 @@ Examples of the accordion module
   <div class="tab-pane fade" id="js_default">
 {% highlight html %}
 <script type="module">
-  import { readMore } from "js-utils";
+  import { readMore } from "wskit";
   readMore.run();
 </script>
 {% endhighlight %}
@@ -197,7 +192,7 @@ Set `data-read-more-active-class="{class}"` attribute
   <div class="tab-pane fade" id="js_active-class">
 {% highlight html %}
 <script type="module">
-  import { accordion } from "js-utils";
+  import { accordion } from "wskit";
   accordion.run();
 </script>
 {% endhighlight %}

@@ -7,7 +7,7 @@ tags:
 
 Example of working with cookies
 <script type="module">
-  import { cookie } from '/js-utils/assets/js/bundle.js';
+  import { cookie } from '/wskit/assets/js/bundle.js';
   document.addEventListener('DOMContentLoaded', function() {
     cookieManager()
   });
@@ -54,10 +54,6 @@ Example of working with cookies
 <style>
   * {
     box-sizing: border-box;
-  }
-
-  h2	{
-    margin: 0;
   }
 
   .cookie {
@@ -135,7 +131,7 @@ Example of working with cookies
   <div class="tab-pane fade active in" id="js1">
 {% highlight html %}
 <script>
-  import cookie from "js-utils";
+  import { cookie } from "@lukovio/wskit";
   cookie.set('profile', 'JohnDoe', 7); //cookie set "profile=JohnDoe"
 </script>
 {% endhighlight %}
@@ -175,7 +171,7 @@ Example of working with cookies
   <div class="tab-pane fade active in" id="js2">
 {% highlight html %}
 <script>
-  import cookie from "js-utils";
+  import { cookie } from "@lukovio/wskit";
   cookie.get('profile'); //cookie get "JohnDoe"
 </script>
 {% endhighlight %}
@@ -213,7 +209,7 @@ Example of working with cookies
   <div class="tab-pane fade active in" id="js3">
 {% highlight html %}
 <script>
-  import cookie from "js-utils";
+  import { cookie } from "@lukovio/wskit";
   cookie.remove(profile); // remove cookie with name "profile"
 </script>  
 {% endhighlight %}

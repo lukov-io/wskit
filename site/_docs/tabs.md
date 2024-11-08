@@ -13,7 +13,7 @@ Import the module into your JS:
 
 #### JavaScript
 ```javascript
-import { tabs } from 'js-utils';
+import { tabs } from '@lukovio/wskit';
 
 tabs.run();
 ```

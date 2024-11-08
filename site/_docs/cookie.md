@@ -9,7 +9,7 @@ A module for managing cookies. This module provides functions for setting, getti
 ### Usage 
 Import the module into your JS:
 ```javascript
-import { cookie } from 'js-utils';
+import { cookie } from '@lukovio/wskit';
 ```
 
 #### Example Usage
@@ -34,7 +34,7 @@ Sets a cookie with the specified name, value, and expiration time in days.
 - `value` (string): The value of the cookie.
 - `days` (number): The expiration time in days.
 
-####`get(name)`
+#### `get(name)`
 
 Gets the value of a cookie by its name.
 

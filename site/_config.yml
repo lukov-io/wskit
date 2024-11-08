@@ -1,14 +1,14 @@
 # Site settings
-title: JS Utils
+title: WSKit
 email: info@lukov.io
 description: >
   Documentation for JavaScript Utils library
 lang: en-US
 
-baseurl: "/js-utils"
-url: https://lukov-io.github.io/js-utils
-git_address: https://github.com/lukov-io/js-utils
-git_edit_address: https://github.com/lukov-io/js-utils/blob/master/site
+baseurl: "/wskit"
+url: https://lukov-io.github.io/wskit
+git_address: https://github.com/lukov-io/wskit
+git_edit_address: https://github.com/lukov-io/wskit/blob/master/site
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
