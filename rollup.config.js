@@ -2,6 +2,7 @@ import { terser } from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
+import copy from 'rollup-plugin-copy';
 
 export default [
   {
@@ -19,16 +20,18 @@ export default [
     ]
   },
   {
-    input: 'js/components/accordion.js',
+    input: 'js/index.js',
     output: {
-      file: 'dist/js/components/accordion.js',
-      format: 'es',
-      sourcemap: false,
+      file: 'dist/js/bundle.js',
+      format: 'esm',
+      sourcemap: true,
     },
     plugins: [
-      resolve(),
-      commonjs(),
-      babel({ babelHelpers: 'bundled' }),
+      copy({
+        targets: [
+          { src: 'js/index.js', dest: 'dist/js/' },
+        ]
+      }),
       terser()
     ]
   },
