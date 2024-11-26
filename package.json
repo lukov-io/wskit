@@ -1,6 +1,6 @@
 {
   "name": "@lukovio/wskit",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
   "main": "dist/js/index.js",
   "files": [
