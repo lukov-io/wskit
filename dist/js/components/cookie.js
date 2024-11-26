@@ -1,1 +1,0 @@
-var t=function(){const t=(t,e,n)=>{let o="";if(n){const t=new Date;t.setTime(t.getTime()+24*n*60*60*1e3),o="; expires="+t.toUTCString()}document.cookie=`${t}=${e||""}${o}; path=/`};return{set:t,get:t=>{const e=`${t}=`,n=document.cookie.split(";");for(let t of n)if(t=t.trim(),t.startsWith(e))return t.substring(e.length);return null},remove:e=>{t(e,"",-1)}}}();export{t as default};

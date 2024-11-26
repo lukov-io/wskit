@@ -40,3 +40,10 @@ Thumbs.db
 Desktop.ini
 
 .parcel-cache
+
+_site
+.sass-cache
+.jekyll-cache
+*.gem
+.bundle
+vendor/bundle

@@ -1,0 +1,58 @@
+# Site settings
+title: WSKit
+email: info@lukov.io
+description: >
+  Documentation for JavaScript Utils library
+lang: en-US
+
+baseurl: "/wskit"
+url: https://lukov-io.github.io/wskit
+git_address: https://github.com/lukov-io/wskit
+git_edit_address: https://github.com/lukov-io/wskit/tree/gh-pages
+
+# theme options from https://bootswatch.com/3/
+# comment out this to use default Bootstrap
+bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+# Plugins (previously gems:)
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+  - vendor
+timezone: Europe/Berlin
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
