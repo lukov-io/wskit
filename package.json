@@ -40,7 +40,7 @@
   "author": "lukov.io/IktaNikuba",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukov-io/wskit"
+    "url": "git+https://github.com/lukov-io/wskit.git"
   },
   "bugs": {
     "url": "https://github.com/lukov-io/wskit/issues"
