@@ -1,8 +1,19 @@
 {
   "name": "@lukovio/wskit",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
-  "main": "dist/js/bundle.js",
+  "main": "dist/js/index.js",
+  "files": [
+    "dist/js/"
+  ],
+  "exports": {
+    ".": "./dist/js/index.js",
+    "./devices": "./dist/js/components/devices.js",
+    "./accordion": "./dist/js/components/accordion.js",
+    "./cookie": "./dist/js/components/cookie.js",
+    "./tabs": "./dist/js/components/tabs.js",
+    "./readMore": "./dist/js/components/tabs.js"
+  },
   "scripts": {
     "dev": "rollup -c -w --environment NODE_ENV:development",
     "build": "rollup -c --environment NODE_ENV:production",
@@ -53,5 +64,8 @@
     "doc": "js/docs",
     "example": "html-examples/examples",
     "test": "cypress/integration"
+  },
+  "dependencies": {
+    "rollup-plugin-copy": "^3.5.0"
   }
 }
