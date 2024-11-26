@@ -1,1 +1,0 @@
-Sitemap: https://lukov-io.github.io/wskit/wskit/sitemap.xml
