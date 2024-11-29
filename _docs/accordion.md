@@ -32,18 +32,18 @@ accordion.run();
 ```
 
 #### CSS
-```CSS
-  .accordion__item-content {
-    display: none;
-  }
-  
-  .accordion__item {
-    &.active {
-      .accordion__item-content {
-       display: block;
-      }
+```css
+.accordion__item-content {
+  display: none;
+}
+
+.accordion__item {
+  &.active {
+    .accordion__item-content {
+     display: block;
     }
   }
+}
 ```
 
 ### Data attributes
