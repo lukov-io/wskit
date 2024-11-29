@@ -1,6 +1,6 @@
 {
   "name": "@lukovio/wskit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
   "main": "dist/js/index.js",
   "files": [
@@ -40,8 +40,8 @@
   "bugs": {
     "url": "https://github.com/lukov-io/wskit/issues"
   },
-  "license": "",
   "homepage": "https://github.com/lukov-io/wskit#readme",
+  "license": "GPL-3.0",
   "private": false,
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
