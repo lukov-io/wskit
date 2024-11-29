@@ -184,19 +184,19 @@ Set `data-accordion="multiple"` attribute
 <div class="accordion" data-accordion="multiple">
   <div class="accordion__item" data-accordion-item>
     <span class="accordion__item-title">Item 1</span>
-    <div class="accordion__item-content" data-accordion-content>
+    <div class="accordion__item-content">
       Content of item 1.
     </div>
   </div>
   <div class="accordion__item" data-accordion-item>
     <span class="accordion__item-title">Item 2</span>
-    <div class="accordion__item-content" data-accordion-content>
+    <div class="accordion__item-content">
       Content of item 2.
     </div>
   </div>
   <div class="accordion__item" data-accordion-item>
     <span class="accordion__item-title">Item 3</span>
-    <div class="accordion__item-content" data-accordion-content>
+    <div class="accordion__item-content">
       Content of item 3.
     </div>
   </div>
