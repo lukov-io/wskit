@@ -1,6 +1,6 @@
 {
   "name": "@lukovio/wskit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of JavaScript utilities for common tasks in web development.",
   "scripts": {
     "jekyll-build-incremental": "yarn copy-library-to-site && bundle exec jekyll build --source ./ --destination dist --config _config.yml --incremental",
