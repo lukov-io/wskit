@@ -25,7 +25,20 @@ readMore.run();
   <button data-read-more-toggler data-more-text="Read More" data-less-text="Read Less">Read More</button>
 </div>
 ```
-
+#### CSS
+```css
+.read-more {
+  .read-more__content {
+    display: none;
+  }
+  
+  &.active {
+    .read-more__content {
+      display: block;
+    }
+  }
+}
+```
 ### Data attributes
 
 - **data-read-more**: Indicates the block that will use the "Read More" functionality.

@@ -40,6 +40,27 @@ tabs.run();
   </div>
 </div>
 ```
+```html
+<div class="tabs" data-tabs data-active-button-class="active-button" data-active-content-class="active-content">
+  <div class="tabs__header">
+    <span data-tab-button="tab1">Tab 1</span>
+    <span data-tab-button="tab2">Tab 2</span>
+    <span data-tab-button="tab3">Tab 3</span>
+  </div>
+  <div data-tab-content="tab1">
+    <h2>Content for Tab 1</h2>
+    <p>This is the content for Tab 1.</p>
+  </div>
+  <div data-tab-content="tab2">
+    <h2>Content for Tab 2</h2>
+    <p>This is the content for Tab 2.</p>
+  </div>
+  <div data-tab-content="tab3">
+    <h2>Content for Tab 3</h2>
+    <p>This is the content for Tab 3.</p>
+  </div>
+</div>
+```
 
 ### Data attributes
 

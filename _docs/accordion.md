@@ -31,6 +31,21 @@ accordion.run();
 </div>
 ```
 
+#### CSS
+```CSS
+  .accordion__item-content {
+    display: none;
+  }
+  
+  .accordion__item {
+    &.active {
+      .accordion__item-content {
+       display: block;
+      }
+    }
+  }
+```
+
 ### Data attributes
 
 - **data-accordion**

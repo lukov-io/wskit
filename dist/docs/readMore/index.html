@@ -21,11 +21,11 @@
 <meta property="og:url" content="https://lukov-io.github.io/wskit/wskit/docs/readMore/" />
 <meta property="og:site_name" content="WSKit" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-11-29T11:54:48+01:00" />
+<meta property="article:published_time" content="2024-11-29T13:21:37+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Documentation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2024-11-29T11:54:48+01:00","datePublished":"2024-11-29T11:54:48+01:00","description":"A module for implementing a “Read More” feature that allows content to be hidden and shown by clicking a button. The user can view additional text or hide it at their discretion.","headline":"Documentation","url":"https://lukov-io.github.io/wskit/wskit/docs/readMore/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2024-11-29T13:21:37+01:00","datePublished":"2024-11-29T13:21:37+01:00","description":"A module for implementing a “Read More” feature that allows content to be hidden and shown by clicking a button. The user can view additional text or hide it at their discretion.","headline":"Documentation","url":"https://lukov-io.github.io/wskit/wskit/docs/readMore/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -225,7 +225,19 @@ The user can view additional text or hide it at their discretion.</p>
   <span class="nt">&lt;button</span> <span class="na">data-read-more-toggler</span> <span class="na">data-more-text=</span><span class="s">"Read More"</span> <span class="na">data-less-text=</span><span class="s">"Read Less"</span><span class="nt">&gt;</span>Read More<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
-
+<h4 id="css">CSS</h4>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.read-more</span> <span class="p">{</span>
+  <span class="err">.read-more__content</span> <span class="err">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+  
+  <span class="o">&amp;</span><span class="nc">.active</span> <span class="p">{</span>
+    <span class="err">.read-more__content</span> <span class="err">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div></div>
 <h3 id="data-attributes">Data attributes</h3>
 
 <ul>

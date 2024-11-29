@@ -10,81 +10,85 @@ Examples of the accordion module
   tabs.run();
 </script>
 <style>
-		* {
-			box-sizing: border-box;
-		}
+  * {
+    box-sizing: border-box;
+  }
 
-		.tabs {
-			max-width: 600px;
-			margin: 20px auto;
-			background-color: #ffffff;
-			border-radius: 5px;
-			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-			overflow: hidden;
+  .tabs {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 
-			.tabs__header {
-				display: flex;
-				background-color: #007bff;
-			}
+    .tabs__header {
+      display: flex;
+      background-color: #007bff;
+    }
 
-			.tabs__button {
-				flex: 1;
-				padding: 15px;
-				color: white;
-				border: none;
-				background: none;
-				cursor: pointer;
-				text-align: center;
+    .tabs__button {
+      flex: 1;
+      padding: 15px;
+      color: white;
+      border: none;
+      background: none;
+      cursor: pointer;
+      text-align: center;
 
-				&.active {
-					background-color: #0056b3;
-				}
-			}
+      &.active {
+        background-color: #0056b3;
+      }
+    }
 
-			&:not([data-active-content-class]) {
-				.tabs__item-content {
-					padding: 20px;
-        }
-
-				.tabs__button {
-					&.active {
-						background-color: #0056b3;
-					}
-				}
+    &:not([data-active-content-class]) {
+      .tabs__item-content {
+        padding: 20px;
       }
 
-			&[data-active-content-class] {
-				.tabs__item-content {
-					overflow: hidden;
-					max-height: 0;
-					opacity: 0;
-					transition: opacity 1s ease,transform 1s ease;
-					transform: translateY(0);
-
-					&.custom-content-class {
-						margin: 20px;
-						max-height: fit-content;
-						opacity: 1;
-						transform: translateY(-10px);
-					}
-				}
-
-      &[data-active-button-class]
-				.tabs__button {
-					&.custom-button-class {
-						background-color: #0056b3;
-						transition: background-color 1s ease-out;
-					}
-				}
-			}
+      .tabs__button {
+        &.active {
+          background-color: #0056b3;
+        }
+      }
     }
-	</style>
+
+    &[data-active-content-class] {
+      .tabs__item-content {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: opacity 1s ease,transform 1s ease;
+        transform: translateY(0);
+
+        &.custom-content-class {
+          margin: 20px;
+          max-height: fit-content;
+          opacity: 1;
+          transform: translateY(-10px);
+        }
+      }
+
+
+    &[data-active-button-class]
+      .tabs__button {
+        &.custom-button-class {
+          background-color: #0056b3;
+          transition: background-color 1s ease-out;
+        }
+      }
+    }
+  }
+</style>
 
 ### Default
 
 <ul class="nav nav-tabs">
   <li class="active">
     <a href="#html_default" data-toggle="tab">HTML</a>
+  </li>
+  <li>
+    <a href="#scss_default" data-toggle="tab">SCSS</a>
   </li>
   <li>
     <a href="#js_default" data-toggle="tab">JS</a>
@@ -115,6 +119,21 @@ Examples of the accordion module
     <p>This is the content for Tab 3. Important information can also be presented here.</p>
   </div>
 </div>
+{% endhighlight %}
+  </div>
+  <div class="tab-pane fade" id="scss_default">
+{% highlight SCSS %}
+.tabs {
+  .tabs__item-content {
+    padding: 20px;
+  }
+
+  .tabs__button {
+    &.active {
+      background-color: #0056b3;
+    }
+  }
+}
 {% endhighlight %}
   </div>
   <div class="tab-pane fade" id="js_default">
@@ -191,7 +210,7 @@ Set `data-active-button-class="{class}"` and `data-active-content-class="{class}
   </div>
   <div class="tab-pane fade" id="scss_active-class">
 {% highlight scss %}
-&[data-active-content-class] {
+.tabs {
   .tabs__item-content {
     overflow: hidden;
     max-height: 0;
@@ -207,7 +226,6 @@ Set `data-active-button-class="{class}"` and `data-active-content-class="{class}
     }
   }
 
-&[data-active-button-class]
   .tabs__button {
     &.custom-button-class {
       background-color: #0056b3;

@@ -79,6 +79,9 @@ Examples of the accordion module
     <a href="#html_default" data-toggle="tab">HTML</a>
   </li>
   <li>
+    <a href="#scss_default" data-toggle="tab">SCSS</a>
+  </li>
+  <li>
     <a href="#js_default" data-toggle="tab">JS</a>
   </li>
   <li>
@@ -103,6 +106,21 @@ Examples of the accordion module
         data-more-text="Read More"
         data-less-text="Hide">Read More</span>
 </div>
+{% endhighlight %}
+  </div>
+  <div class="tab-pane fade" id="scss_default">
+{% highlight scss %}
+.read-more {
+  .read-more__content {
+    display: none;
+  }
+
+  &.active {
+    .read-more__content {
+      display: block;
+    }
+  }
+}
 {% endhighlight %}
   </div>
   <div class="tab-pane fade" id="js_default">
@@ -169,8 +187,7 @@ Set `data-read-more-active-class="{class}"` attribute
   </div>
   <div class="tab-pane fade" id="scss_active-class">
 {% highlight scss %}
-
-[data-read-more-active-class] {
+.read-more {
   .read-more__content {
     max-height: 0;
     opacity: 0;
@@ -178,7 +195,7 @@ Set `data-read-more-active-class="{class}"` attribute
     overflow: hidden;
     transition: max-height 1s ease, opacity 1s ease;
   }
-  
+
   &.animation-class {
     .read-more__content {
       max-height: 500px;
@@ -186,7 +203,6 @@ Set `data-read-more-active-class="{class}"` attribute
     }
   }
 }
-
 {% endhighlight %}
   </div>
   <div class="tab-pane fade" id="js_active-class">
