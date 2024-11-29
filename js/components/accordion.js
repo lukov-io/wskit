@@ -54,6 +54,7 @@ export default (function () {
     const item = event.currentTarget;
     const itemActiveClass = accordion.dataset.itemActiveClass || 'active';
     const mode = accordion.dataset.accordion || 'single';
+    const content = item.querySelector('[data-accordion-content]');
 
     if (mode === 'single' && !item.classList.contains(itemActiveClass)) {
       resetState(accordion, itemActiveClass);
